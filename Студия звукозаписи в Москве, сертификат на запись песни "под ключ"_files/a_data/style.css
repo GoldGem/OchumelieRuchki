@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?-dkldlu');
+  src: url('fonts/icomoon.eot?#iefix-dkldlu') format('embedded-opentype'),
+  url('fonts/icomoon.woff?-dkldlu') format('woff'),
+  url('fonts/icomoon.ttf?-dkldlu') format('truetype'),
+  url('fonts/icomoon.svg?-dkldlu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Time:before {
+  content: "\e602";
+}
+
+.icon-Location:before {
+  content: "\e603";
+}
+
+.icon-Like:before {
+  content: "\e604";
+}
+
+.icon-comments:before {
+  content: "\e605";
+}
+
+.icon-tag:before {
+  content: "\e606";
+}
+
+.icon-search:before {
+  content: "\e607";
+}
+
+.icon-play:before {
+  content: "\e608";
+}
+
+.icon-arrow-right:before {
+  content: "\e609";
+}
+
+.icon-arrow-left:before {
+  content: "\e60a";
+}
+
+.icon-arrow-left2:before {
+  content: "\e600";
+}
+
+.icon-arrow-right2:before {
+  content: "\e601";
+}

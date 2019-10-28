@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html lang="en-US" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en-US" class="ie ie9"> <![endif]-->
+<!--[if IE]>
+<html lang="en-US" class="ie ie10"> <![endif]-->
+<!--[if (gt IE 9)]><!-->
+<html class=" js flexbox csscalc display-table no-overflowscrolling" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Character set -->
+            <meta charset="UTF-8"><script type="text/javascript" src="a_data/eba6573314"></script><script src="a_data/nr-1130.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+        <!-- Remove ios telephone detection -->
+        <meta name="format-detection" content="telephone=no">
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+    <script src="//jamesallardice.github.io/Placeholders.js/assets/js/placeholders.min.js"></script>
+    <![endif]-->
+
+    <!-- StyleSheets -->
+                <link rel="stylesheet" href="a_data/fonts.asc">
+        <link rel="stylesheet" href="a_data/style.css">
+    
+
+        <link rel="stylesheet" href="a_data/layout.css">
+    
+    <style type="text/css" wix-style="">
+                                    
+    body,
+    #side_header {
+        background: rgba(255,255,255,0.4590163934426229);
+        color: #1B2942;
+    font:normal normal normal 14px/17px play,sans-serif;;
+    }
+
+    #layout a,
+    #layout a:focus,
+    #layout a:visited,
+    #layout a:active,
+    #layout a:hover {
+        color: rgba(0,0,0,1);
+    font:normal normal bold 15px/18px play,sans-serif;;
+    }
+
+    #layout p,
+    #layout span,
+    #layout i {
+        color: #1B2942;
+    font:normal normal normal 14px/17px play,sans-serif;;
+    }
+
+        #layout .pager > span {
+        color: rgba(0,0,0,1);
+    }
+
+    #header {
+        background-color: rgba(255,255,255,0.3442622950819672);
+    }
+
+    #header p,
+    #header li,
+    #header span,
+    #header h1,
+    #header h2 {
+        color: #1B2942;
+    font:normal normal normal 15px/18px play,sans-serif;;
+    }
+
+        .stats_block .stat {
+        border-color: #1B2942;
+    }
+
+    /* Prev and next arrows */
+    .thumb_gallery_wrapper .prev:before {
+        border-right-color: rgba(0,0,0,1);
+    }
+
+    .thumb_gallery_wrapper .next:before {
+        border-left-color: rgba(0,0,0,1);
+    }
+
+        hr {
+        border-top-color: rgba(0,0,0,1);
+    }
+
+</style>
+
+
+            <title>Instagram Live Feed</title>
+    <script type="text/template" id="header_template">
+    <div id="header_wrapper" class=" header_wrapper  inline_block clearfix">
+        <!-- User Info -->
+        
+                    <img src="<%= o.profilePic %>" alt="<%= o.username %>" class="user_image">
+        
+        <div class="user_block">
+                            <a class="user_name" data-href="//www.instagram.com/<%= o.username %>/">
+                    <p><%= o.username %></p></a>
+            
+            <div id="follow_block" class="follow_block">
+
+            </div>
+            <div id="follow_error" class="tooltip shadow_tt tt_top" style="display: none">
+                <div class="arrow"></div>
+                <p>You cannot follow yourself!</p>
+            </div>
+        </div>
+
+                    <ul class="stats_block inline_block">
+                <li class="photos stat"><span><%= o.posts %></span><br>Посты</li>
+                <li class="followers stat"><span><%= o.followers %></span><br>Подписчики</li>
+                <li class="following stat"><span><%= o.following %></span><br>Подписки</li>
+            </ul>
+                    </div>
+</script><script type="text/template" id="media_info_template">
+
+            <div class="additional_info inline_block">
+            <div class="stat">
+                <i class="icon icon-Like"></i>
+                <span><%= o.likes %></span>
+            </div>
+            <div class="stat">
+                <i class="icon icon-comments"></i>
+                <span><%= o.comments %></span>
+            </div>
+            <div class="stat">
+                <i class="icon icon-Time"></i>
+                <span><%= o.createdDate %></span>
+            </div>
+
+            <% if (o.location) { %>
+            <div class="stat">
+                <i class="icon icon-Location"></i>
+                <span><%= o.location %></span>
+            </div>
+            <% } %>
+
+        </div>
+                    <hr/>
+            
+</script><script type="text/template" id="description_template">
+            <p class="description"><%= o.description %></p>
+
+        <% if (o.description && o.description.length > 0) { %>
+                    <hr/>
+                <% } %>
+    </script><script type="text/template" id="pager_template">
+    <% if (o.displayPrev) { %>
+    <a href="javascript:void(0)" class="prev prev_small">Пред.</a>
+    <% } %>
+
+    <% if (o.displayNext) { %>
+    <a href="javascript:void(0)" class="next next_small">Вперед</a>
+    <% } %>
+</script><script type="text/template" id="slideshow_template">
+    <% if (o.displayPrev) { %>
+    <a class="prev prev_large ir" href="javascript:void(0)">Назад</a>
+    <% } %>
+
+    <% if (o.displayNext) { %>
+    <a class="next next_large ir" href="javascript:void(0)">Вперед</a>
+    <% } %>
+</script><script type="text/template" id="load_more_template">
+    <% if (o.displayPrev) { %>
+    <a class="load load_less" href="javascript:void(0)">Показать меньше</a>
+    <% if (o.displayNext) { %>
+    <span>|</span>
+    <% } %>
+    <% } %>
+
+    <% if (o.displayNext) { %>
+    <a class="load load_more" href="javascript:void(0)">Показать больше</a>
+    <% } %>
+</script><script type="text/template" id="comments_template">
+            <!-- comments gallery -->
+        <ul class="comments inline_block" id="comments_list">
+        </ul>
+    </script><script type="text/template" id="show_more_comments_template">
+            <div class="comments_additional">
+                    </div>
+    </script><script type="text/template" id="like_template">
+    </script><script type="text/template" id="comment_text_template">
+                                                      <a class="view_on_instagram" data-href="<%= o.link %>">View on Instagram</a>
+    </script><script type="text/template" id="comment_template">
+    <li class="comment inline_block">
+        <div class="comment_content inline_block">
+            <p class="comment_username"><%= o.username %></p>
+
+            <p class="comment_body"><%= o.text %></p>
+        </div>
+    </li>
+</script><script type="text/template" id="image_template">
+    <li class="thumb_image <%= o.type %>" id="<%= o.id %>">
+        <a href="#" class="group thumb_image_item" data-id="<%= o.id %>">
+        <img src="<%= o.thumbImage %>" alt="<%= o.description %>" data-id="<%= o.id %>">
+            <span class="play ir" href="javascript:void(0)" data-id="<%= o.id %>">Play</span>
+        </a>
+    </li>
+</script><script type="text/template" id="preview_image_template">
+    <img class="main_image image_photo" src="<%= o.image %>"/>
+</script><script type="text/template" id="preview_video_template">
+    <div id="vidya">
+        <div href="javascript:void(0)" class="video_preview">
+            <img class="main_image image_video" src="<%= o.image %>"/>
+            <span class="play ir" href="javascript:void(0)" data-id="<%= o.id %>">Play</span>
+        </div>
+
+        <div class="video_element jp-video" id="video_container">
+            <div id="video_element" class="jp-jplayer" data-src="<%= o.video %>" data-poster="<%= o.image %>"></div>
+            <div class="jp-gui">
+                <div class="jp-video-play">
+                    <a class="play ir jp-video-play-icon" href="javascript:void(0)"
+                       data-id="<%= o.id %>">Play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fallback" style="display: none"><p>Невозможно воспроизвести видео</p></div>
+</script><script type="text/template" id="private_template">
+    <section id="layout" class="error_layout private_layout">
+        <div id="private_wrapper" class="private_wrapper">
+            <% if (o.followed == "requested") { %>
+            <p>Ваш запрос получен, но еще не подтвержден</p>
+            <% } else { %>
+            <p>Приватный контент</p><br>
+
+            <p><a href="javascript:void(0)" id="private_follow_user" class="link_follow">Запросить подписку &gt;&gt;</a></p>
+            <% } %>
+        </div>
+    </section>
+</script><script type="text/template" id="error_template">
+    <section id="layout" class="error_layout private_layout">
+        <div id="error_wrapper" class="error_wrapper">
+            <p>Ошибка запроса.</p><br>
+
+            <p>Нажмите
+                <a href="javascript:void(0)" id="reload_link">здесь</a>
+                для перезагрузки.
+            </p>
+        </div>
+    </section>
+</script><style type="text/css"></style><style wix-style="">.Title{ font:normal normal normal 50px/1.4em play,sans-serif; } .Menu{ font:normal normal normal 16px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif; } .Page-title{ font:normal normal normal 38px/1.4em nimbus-sans-tw01con,sans-serif; } .Heading-XL{ font:normal normal normal 50px/1.4em "open sans condensed",sans-serif; } .Heading-L{ font:normal normal normal 35px/1.4em nimbus-sans-tw01con,sans-serif; } .Heading-M{ font:normal normal normal 31px/1.4em "open sans condensed",sans-serif; } .Heading-S{ font:normal normal normal 26px/1.4em nimbus-sans-tw01con,sans-serif; } .Body-L{ font:normal normal normal 16px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif; } .Body-M{ font:normal normal normal 14px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif; } .Body-S{ font:normal normal normal 12px/1.4em arial,"ｍｓ ｐゴシック","ms pgothic","돋움",dotum,helvetica,sans-serif; } .Body-XS{ font:normal normal normal 10px/1.4em arial,"ｍｓ ｐゴシック","ms pgothic","돋움",dotum,helvetica,sans-serif; } }</style><link type="text/css" rel="stylesheet" href="a_data/css.css" id="wix-google-fonts"><link type="text/css" rel="stylesheet" href="sfnew2_data/languages.css"></head>
+    
+    
+
+
+    
+
+
+
+
+    
+
+
+    
+
+    
+    
+    
+
+
+        
+                                                                                                                            
+    
+
+
+            <body role="document/application" class="desktop lang_en">
+            <div id="container" class="clearfix">
+                <!-- main content -->
+                                                                                                    <main id="main" role="main" class="grid_layout">
+                            <header id="header" class="header thumbs_only">
+        
+    <div id="header_wrapper" class="header_wrapper inline_block clearfix">
+        <!-- User Info -->
+        
+                    <img src="a_data/12965824_1401234856842178_269137396_a.jpg" alt="studiovoiceofficial" class="user_image">
+        
+        <div class="user_block">
+                            <a class="user_name" data-href="//www.instagram.com/studiovoiceofficial/">
+                    <p>studiovoiceofficial</p></a>
+                    </div>
+
+                    <ul class="stats_block inline_block">
+                <li class="photos stat"><span>152</span><br>Посты</li>
+                <li class="followers stat"><span>437</span><br>Подписчики</li>
+                <li class="following stat"><span>1718</span><br>Подписки</li>
+            </ul>
+                    </div>
+</header>
+
+<section id="layout" class="inline_block thumbs_only grid">
+
+    <!-- thumb image gallery -->
+    <div class="thumb_gallery_wrapper">
+        <div class="image_gallery">
+    <ul class="thumb_gallery inline_block" style="display: inline-block;">
+    <li class="thumb_image image" id="2157485296593976627_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2157485296593976627_529694912">
+        <img src="a_data/73381132_555956948507603_6076669039755191145_n.jpg" alt="На нашей студии всегда можно получить мастер класс от наших ведущих педагогов. Они подскажут вам, как правильно распеться, отрепетируют песни с вами и помогут в осуществлении записи! Ждём вас в нашей студии! #студиовойс #studiovoice #studiovoiceofficial" data-id="2157485296593976627_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2157485296593976627_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2114066713447931030_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2114066713447931030_529694912">
+        <img src="a_data/68717031_133759301184538_1496106942924883008_n.jpg" alt="Спасибо вам дорогое наши клиенты! А мы тем временем напоминаем Вам, что Вы можете получить скидку на первый заказ, заполнив форму у нас на сайте! #studiovoice #голос #вокал #микрофон" data-id="2114066713447931030_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2114066713447931030_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2064740325805165740_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2064740325805165740_529694912">
+        <img src="a_data/61574446_2054957384799885_8004039294210970454_n.jpg" alt="Студия преображается, когда к нам приходят такте красивые и счастливые клиенты ) ждём вас снова! #записьпеснивстудии #студиязвукозаписи #записьпесни #песни #микрофон #studiovoice #studiovoiceofficial" data-id="2064740325805165740_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2064740325805165740_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2026360294155753624_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2026360294155753624_529694912">
+        <img src="a_data/56974008_588712504972487_4589095683625547307_n.jpg" alt="Музыкальный сюрприз от родителей детям на выпускной🎤💃🎧 #studiovoice #music #студиязвукозаписинатаганке #таганка #студия #vocal #surprise #children #выпускной2019" data-id="2026360294155753624_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2026360294155753624_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2025503703697285433_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2025503703697285433_529694912">
+        <img src="a_data/57234202_432078430888151_685995595042795911_n.jpg" alt="#studiovoice #студиязвукозаписинатаганке #music #студия #moscow" data-id="2025503703697285433_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2025503703697285433_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2024026481648031456_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2024026481648031456_529694912">
+        <img src="a_data/56553791_2010067842449311_5950817861417298298_n.jpg" alt="Поем Пугачеву 🎤🎤🎤😎🤩 #studiovoice #студиязвукозаписи #натаганке #студиязвукозаписинатаганке #music #vocal #song" data-id="2024026481648031456_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2024026481648031456_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2021194322516353061_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2021194322516353061_529694912">
+        <img src="a_data/56209783_321831738520123_2985306691635611875_n.jpg" alt="#studiovoice #студиязвукозаписи #вокал #песни #натаганке" data-id="2021194322516353061_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2021194322516353061_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2018974366965925857_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2018974366965925857_529694912">
+        <img src="a_data/54732363_2258941987688533_3052233469236068160_n.jpg" alt="Записали очень красивый, музыкальный подарок для дня рождения мамы в нашей студии звукозаписи - #studiovoice !!! #surprice #happy #family #песни #подарок #студиязвукозаписи #натаганке" data-id="2018974366965925857_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2018974366965925857_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2017565581068003678_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2017565581068003678_529694912">
+        <img src="a_data/55790172_447411729335023_4982522061518985725_n.jpg" alt="Мечты сбываются в нашей студии звукозаписи - #studiovoice 😁🎤" data-id="2017565581068003678_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2017565581068003678_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2016750196601369237_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2016750196601369237_529694912">
+        <img src="a_data/53794651_414242209122171_3645005690656712132_n.jpg" alt="Свадебный сюрприз жениху 😊#studiovoice" data-id="2016750196601369237_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2016750196601369237_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2014647806821608556_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2014647806821608556_529694912">
+        <img src="a_data/56866551_2392329900777668_8784826503116490349_n.jpg" alt="#studiovoice #студиязвукозаписи #vocal #песни #сюрприз #подарок #приятныевпечатления" data-id="2014647806821608556_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2014647806821608556_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2013191384745149151_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2013191384745149151_529694912">
+        <img src="a_data/54510913_150998692597431_5121958190881460107_n.jpg" alt="Вот как у нас уютно при входе в нашу #СтудиюЗвукозаписи. Перед записью можно согреться горячим чаем, или кофе, или настроиться на нужный лад перед пением 😍🎤🎧 #studiovoice #МыНаТаганке #вокал #подарок" data-id="2013191384745149151_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2013191384745149151_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2012410120589106378_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2012410120589106378_529694912">
+        <img src="a_data/53591774_1296387463847212_7868425154521493025_n.jpg" alt="Вот так эмоционально исполняют песни в нашей Студии звукозаписи 🎤 не упустите свою возможность, поделиться своей энергией в песнях у нас!!! Для этого переходите к нам на сайт www.studiovoice.ru #studiovoice #студиязвукозаписи #Таганка" data-id="2012410120589106378_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2012410120589106378_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image video" id="2011939200258951614_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2011939200258951614_529694912">
+        <img src="a_data/54230433_125781895193366_6952067796300152781_n.jpg" alt="#studiovoice #студиязвукозаписи #студиявцентре #москва #таганка #голос #вокал" data-id="2011939200258951614_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2011939200258951614_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2011934988145949734_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2011934988145949734_529694912">
+        <img src="a_data/55866965_892148981122284_6949351452473952839_n.jpg" alt="Музыкальный подарок для родителей 😎🤩 #studiovoice #студиязвукозаписи #музыкальныйподарок #surprise" data-id="2011934988145949734_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2011934988145949734_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2009708628606424011_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2009708628606424011_529694912">
+        <img src="a_data/53851751_260291414924662_6393413910780884374_n.jpg" alt="#studiovoice #студиязвукозаписи #наТаганке" data-id="2009708628606424011_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2009708628606424011_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2008844402484328201_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2008844402484328201_529694912">
+        <img src="a_data/52147149_1982566562039962_6937105841023924720_n.jpg" alt="Скорее к нам на сайт www.studiovoice.ru. Подарите себе, или близкому незабываемые впечатления от записи песни в нашей Студии звукозаписи)) #studiovoice #студиязвукозаписи #Таганка" data-id="2008844402484328201_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2008844402484328201_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2007551698848719707_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2007551698848719707_529694912">
+        <img src="a_data/54463775_450327829126731_3231885349324147902_n.jpg" alt="#studiovoice #voice #music #студиязвукозаписи #подарок #песни" data-id="2007551698848719707_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2007551698848719707_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2006682551189453125_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2006682551189453125_529694912">
+        <img src="a_data/53637623_127651161630261_3236777213955704806_n.jpg" alt="Все довольны и счастливы 🤩🤩🤩 мы рады , что можем столько приятных впечатлений оставлять нашим певицам и певцам ))) #studiovoice #music #студия звукозаписи #студиязвукозаписинатаганке #таганка" data-id="2006682551189453125_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2006682551189453125_529694912">Play</span>
+        </a>
+    </li>
+
+    <li class="thumb_image image" id="2005988159348745091_529694912">
+        <a href="#" class="group thumb_image_item" data-id="2005988159348745091_529694912">
+        <img src="a_data/53368196_349388059005221_7376058589784850192_n.jpg" alt="Осуществилась мечта Ирины ))) ☺️☺️☺️🥳" data-id="2005988159348745091_529694912">
+            <span class="play ir" href="javascript:void(0)" data-id="2005988159348745091_529694912">Play</span>
+        </a>
+    </li>
+</ul>
+</div>
+<nav id="pager" class="pager" style="display: block;">
+    
+
+    
+    <a href="javascript:void(0)" class="next next_small">Вперед</a>
+    
+</nav>
+    </div>
+            <nav id="hidden_pager" class="pager" style="text-indent: -9999px; position: absolute;">
+        <a href="#" class="prev prev_small">Пред.</a>
+        <a href="#" class="next next_small">Вперед</a>
+    </nav>
+
+</section>
+                    </main>
+                
+            </div>
+            <div id="loader" class="hidden">
+    <h1>Загрузка...</h1>
+</div>
+        <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"eba6573314","applicationID":"335027573","transactionName":"NAcAMEYDW0UFBUcKWA1NIRFHFlpbSw9dB1Ib","queueTime":0,"applicationTime":582,"atts":"GEADRg4ZSEs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    
+        <script src="a_data/jquery-1.js"></script>
+    <script src="a_data/wix.js"></script>
+    <script src="a_data/lodash.js"></script>
+    <script src="a_data/router.js"></script>
+    <script src="a_data/routing.js"></script>
+
+    
+        <!--[If lte IE 9]>
+        <script type="text/javascript" src="/bundles/wixinstagram/js/responsive/respond.min.js"></script>
+        <![endif]-->
+
+                <script type="text/javascript" src="a_data/vendor.js"></script>
+        
+    
+    
+                <script type="text/javascript" src="a_data/main.js"></script>
+        
+                <script type="text/javascript" src="a_data/6b5c15a.js"></script>
+    
+        
+
+    <script>
+        // console polyfill
+        if (!window.console) {
+            window.console = {
+                log: function() {},
+                warn: function() {},
+                error: function() {}
+            }
+        }
+    </script>
+    <script>
+        // template interpolation: <% %>
+        tmpl.regexp = /([\s'\\])(?!(?:[^<]|<(?!%))*%>)|(?:<%(=|#)([\s\S]+?)%>)|(<%)|(%>)/g;
+    </script>
+
+    <script>
+        // moment internationalization
+        moment.lang('');
+    </script>
+
+    <script type="text/javascript">
+        // Assigns the instance required for AJAX requests
+        wixInstagramApp.instance = 'pf_CjBa9u_ii6H1S2qUeqaSCUHIDbQryO6kC_SgLc6k.eyJpbnN0YW5jZUlkIjoiMTM5ODg2NGItMzZmYS1lODRmLTc1OTQtNDllMjRlYTgxODE4IiwiYXBwRGVmSWQiOiIxMmE1YTU2My0zYjY5LTcyNGItZTIxZS02ZTAzZDE5MGNmNzIiLCJtZXRhU2l0ZUlkIjoiMDgwZTk2NjQtNjY0Yy00M2EzLTllNjMtYjcxZWVkOGY1YjA1Iiwic2lnbkRhdGUiOiIyMDE5LTEwLTI3VDA5OjQ3OjMxLjk0MloiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjEwOS4yNTIuMjIxLjE5Ni81MTE2MCIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiIxMDk2YzE0Ny1hMTFjLTRjNTgtYTVlYS0yMzk3Y2IwNDVmMzgiLCJiaVRva2VuIjoiMWI5NjEwMmYtNTBiNi1hYmVjLWViZjctZmVmY2EzMjc0MzFkIiwic2l0ZU93bmVySWQiOiI5NGM0Yzg0Ni0yZTRlLTRhM2YtYjFhNi02N2RlNTZmMDFiNDEifQ';
+        var userData, relData;
+
+                        userData = JSON.parse('\x7B\x22id\x22\x3A\x22529694912\x22,\x22username\x22\x3A\x22studiovoiceofficial\x22,\x22profile_picture\x22\x3A\x22https\x3A\x5C\x2F\x5C\x2Fscontent.cdninstagram.com\x5C\x2Fvp\x5C\x2Faa22b29f90ffd91437151e2b0c7ff79f\x5C\x2F5E424EB0\x5C\x2Ft51.2885\x2D19\x5C\x2Fs150x150\x5C\x2F12965824_1401234856842178_269137396_a.jpg\x3F_nc_ht\x3Dscontent.cdninstagram.com\x22,\x22full_name\x22\x3A\x22\x5Cu041f\x5Cu0435\x5Cu0441\x5Cu043d\x5Cu044f\x20\x5Cu0432\x20\x5Cu043f\x5Cu043e\x5Cu0434\x5Cu0430\x5Cu0440\x5Cu043e\x5Cu043a\x22,\x22bio\x22\x3A\x22\x5Cu0417\x5Cu0430\x5Cu043f\x5Cu0438\x5Cu0441\x5Cu044c.\x20\x5Cu0422\x5Cu044e\x5Cu043d\x5Cu0438\x5Cu043d\x5Cu0433.\x20\x5Cu0421\x5Cu0432\x5Cu0435\x5Cu0434\x5Cu0435\x5Cu043d\x5Cu0438\x5Cu0435.\x20\x5Cu041c\x5Cu0430\x5Cu0441\x5Cu0442\x5Cu0435\x5Cu0440\x5Cu0438\x5Cu043d\x5Cu0433.\x20\x5Cu041f\x5Cu043e\x5Cu0434\x5Cu0430\x5Cu0440\x5Cu043e\x5Cu0447\x5Cu043d\x5Cu044b\x5Cu0435\x20\x5Cu0441\x5Cu0435\x5Cu0440\x5Cu0442\x5Cu0438\x5Cu0444\x5Cu0438\x5Cu043a\x5Cu0430\x5Cu0442\x5Cu044b\x20\x5Cu043d\x5Cu0430\x20\x5Cu0437\x5Cu0430\x5Cu043f\x5Cu0438\x5Cu0441\x5Cu044c\x20\x5Cu043f\x5Cu0435\x5Cu0441\x5Cu0435\x5Cu043d\x20\x5Cu0434\x5Cu043b\x5Cu044f\x20\x5Cu043d\x5Cu0435\x20\x5Cu043f\x5Cu0440\x5Cu043e\x5Cu0444\x5Cu0435\x5Cu0441\x5Cu0441\x5Cu0438\x5Cu043e\x5Cu043d\x5Cu0430\x5Cu043b\x5Cu043e\x5Cu0432.\x20\x5Cu231a\x5Cufe0f11.00\x2D22.00\x20\x5Cud83d\x5Cudcde89853325633\x5Cn\x5Cu0421\x5Cu0435\x5Cu0439\x5Cu0447\x5Cu0430\x5Cu0441\x20\x5Cu0431\x5Cu043e\x5Cu043b\x5Cu044c\x5Cu0448\x5Cu0438\x5Cu0435\x20\x5Cu0441\x5Cu043a\x5Cu0438\x5Cu0434\x5Cu043a\x5Cu0438\x21\x22,\x22website\x22\x3A\x22http\x3A\x5C\x2F\x5C\x2Fwww.studiovoice.ru\x5C\x2F\x22,\x22is_business\x22\x3Atrue,\x22counts\x22\x3A\x7B\x22media\x22\x3A152,\x22follows\x22\x3A1718,\x22followed_by\x22\x3A437\x7D\x7D');
+        relData = JSON.parse('\x5B\x5D');
+        //        wixInstagramApp.account = new User(userData);
+        //        wixInstagramApp.account.followUnfollow(relData);
+        
+                var settings = JSON.parse('\x7B\x22id\x22\x3A\x225429cf1d0ae9dc1a74000000\x22,\x22instance_id\x22\x3A\x221398864b\x2D36fa\x2De84f\x2D7594\x2D49e24ea81818\x22,\x22comp_id\x22\x3A\x22i0obwnf7\x22,\x22instagram_id\x22\x3A529694912,\x22instagram_username\x22\x3A\x22studiovoiceofficial\x22,\x22token\x22\x3A\x22529694912.e11acf5.b774e02ab7c04b98b7b2c553ef7162d7\x22,\x22show_comments\x22\x3Atrue,\x22show_likes\x22\x3Atrue,\x22show_your_profile_details\x22\x3Atrue,\x22show_thumbs\x22\x3Atrue,\x22show_like_button\x22\x3Afalse,\x22show_description\x22\x3Atrue,\x22show_follow_button\x22\x3Afalse,\x22show_username\x22\x3Atrue,\x22auto_play\x22\x3Afalse,\x22show_thumbnail_grid\x22\x3A8,\x22background\x22\x3A\x22white\x5C\x2Fblack\x22,\x22background_opacity_bool\x22\x3Afalse,\x22background_opacity_int\x22\x3A80,\x22separators_and_icons\x22\x3A\x22color\x2D15\x22,\x22separators_and_icons_opacity_bool\x22\x3Afalse,\x22separators_and_icons_opacity_int\x22\x3A80,\x22text\x22\x3A\x22color\x2D15\x22,\x22header_text\x22\x3A\x22color\x2D15\x22,\x22links\x22\x3A\x22color\x2D8\x22,\x22num_of_thumbs\x22\x3A8,\x22boxes\x22\x3A\x22color\x2D12\x22,\x22boxes_opacity_bool\x22\x3Afalse,\x22boxes_opacity_int\x22\x3A80,\x22gallery_source\x22\x3A\x22account\x22,\x22hash_tag\x22\x3A\x22\x22,\x22layout\x22\x3A\x22thumb\x22,\x22media_filter\x22\x3A\x22imagevideo\x22,\x22lang\x22\x3A\x22Ru\x22,\x22header_font\x22\x3A\x22Body\x2DM\x22,\x22body_font\x22\x3A\x22Body\x2DM\x22,\x22links_font\x22\x3A\x22Body\x2DM\x22,\x22is_tag_selected\x22\x3Afalse\x7D');
+        wixInstagramApp.mainController.initialize({
+            settings: settings,
+            account: userData
+        });
+
+        if (relData) {
+            wixInstagramApp.account.setRelation(relData);
+        }
+    </script>
+
+
+    <script>
+        $(function() {
+            wixInstagramApp.desktopController.start('thumb');
+            Wix.Performance.applicationLoaded();
+        });
+    </script>
+
+</body></html>
