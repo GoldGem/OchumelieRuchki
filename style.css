@@ -1,6 +1,5 @@
 a,abbr,acronym,address,applet,b,big,blockquote,body,button,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,nav,object,ol,p,pre,q,s,samp,section,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,title,tr,tt,u,ul,var {
  margin:0;
- padding:0;
  border:0;
  outline:0;
  vertical-align:baseline;
@@ -7671,7 +7670,8 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
 #ig2pj479 {
     position: relative;
-    margin: 0px 0px 15px calc((100% - 980px) * 0.5);
+    width: 660px;
+    margin: 0px 0px 15px calc((100% - 905px) * 0.5);
     left: 225px;
     grid-area: 4 / 1 / 5 / 2;
     justify-self: start;
