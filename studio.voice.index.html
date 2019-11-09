@@ -11,6 +11,30 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/slider_styles.css">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1500);
+           });
+       });
+       </script>
+    
+<!-- кнопка возврата на начала страницы -->
+    <script type="text/javascript" > 
+    function up() {  
+        var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+      if(top > 0) {  
+        window.scrollBy(0,((top+100)/-10));  
+        t = setTimeout('up()',20);  
+      } else clearTimeout(t);  
+      return false;  
+      } 
+      </script>
+    <!--  -->
     <script type="text/javascript" src="js/jquery.glide.min.js"></script>
     
     
@@ -887,54 +911,54 @@ $(function(){
 
 <h4 class="font_4" style="font-size:24px; text-align:center;">
 <span style="font-size:24px;">
-        <table style="font-family:play,sans-serif;" cellspacing="0" cellpadding="0" margin="0" align="center" >
+        <table style="font-family:play,sans-serif;" widith="100%" cellspacing="0" cellpadding="0" margin="0" align="center" >
             <tbody>
             <tr>
-            <td valign="top">Студия А (без работы звукорежиссёра)</td>
+            <td align="left">Студия А (без работы звукорежиссёра)</td>
             <td style="text-align: right;" valign="top">&nbsp; 1 500 руб./час</td>
             </tr>
             <tr>
-            <td valign="top">Студия В&nbsp;(без работы звукорежиссёра)</td>
+            <td align="left">Студия В&nbsp;(без работы звукорежиссёра)</td>
             <td style="text-align: right;" valign="top">&nbsp; &nbsp;1 000 руб./час</td>
             </tr>
             <tr>
-            <td valign="top">Студия С&nbsp;(без работы звукорежиссёра)</td>
+            <td align="left">Студия С&nbsp;(без работы звукорежиссёра)</td>
             <td style="text-align: right;" valign="top">&nbsp; &nbsp;750 руб./час</td>
             </tr>
             <tr>
-            <td valign="top">Работа звукорежиссёра</td>
+            <td align="left">Работа звукорежиссёра</td>
             <td style="text-align: right;" valign="top">&nbsp;1 000 руб./час</td>
             </tr>
             <tr>
-            <td valign="top">Аранжировка</td>
+            <td align="left">Аранжировка</td>
             <td style="text-align: right;" valign="top">&nbsp;от 25 000 руб.</td>
             </tr>
             <tr>
-            <td valign="top">Сведение</td>
+            <td align="left">Сведение</td>
             <td style="text-align: right;" valign="top">&nbsp;от 15 000 руб./песня</td>
             </tr>
             <tr>
-            <td valign="top">Песня под ключ(запись,редакция,сведение)</td>
+            <td align="left">Песня под ключ(запись,редакция,сведение)</td>
             <td style="text-align: right;" valign="top">&nbsp;от 50 000 руб.</td>
             </tr>
             <tr>
-            <td valign="top">Написание песен</td>
+            <td align="left">Написание песен</td>
             <td style="text-align: right;" valign="top">&nbsp;от 20 000 руб.</td>
             </tr>
             <tr>
-            <td valign="top">Написание текстов</td>
+            <td align="left">Написание текстов</td>
             <td style="text-align: right;" valign="top">&nbsp;от 10 000 руб.</td>
             </tr>
             <tr>
-            <td valign="top">Редакция треков</td>
+            <td align="left">Редакция треков</td>
             <td style="text-align: right;" valign="top">&nbsp;от 2 000 руб./за 1 песню</td>
             </tr>
             <tr>
-            <td valign="top">Съёмка в студии</td>
+            <td align="left">Съёмка в студии</td>
             <td style="text-align: right;" valign="top">&nbsp;3 000 руб./час</td>
             </tr>
             <tr>
-            <td valign="top">Запись песни на минус</td>
+            <td align="left">Запись песни на минус</td>
             <td style="text-align: right;" valign="top">&nbsp;6 500 руб./песня</td>
             </tr>
             <tr>
@@ -942,11 +966,11 @@ $(function(){
             <td style="text-align: right;" valign="top"></td>
             </tr>
             <tr>
-            <td valign="top">Выпуск песни в популярных сборниках</td>
+            <td align="left">Выпуск песни в популярных сборниках</td>
             <td style="text-align: right;" valign="top">&nbsp;договорная</td>
             </tr>
             <tr>
-            <td valign="top">Выпуск альбома</td>
+            <td align="left">Выпуск альбома</td>
             <td style="text-align: right;" valign="top">&nbsp;договорная</td>
             </tr>
             </tbody>
@@ -3814,7 +3838,7 @@ e-mail:&nbsp;<object height="0">
             <nav>
                 <ul style="text-align:center" aria-label="Site navigation" role="navigation" id="DrpDwnMn0-sbfitemsContainer" class="ddm2itemsContainer">
                     <li data-direction="ltr" data-listposition="left" data-data-id="bmic7u" class="ddm2repeaterButton" data-state="menu selected idle link notMobile" id="DrpDwnMn0-sbf0" data-original-gap-between-text-and-btn="0" style="width: 76px; height: 50px; position: relative; box-sizing: border-box; overflow: visible;" aria-hidden="false">
-                        <a role="button" tabindex="0" aria-haspopup="false" data-listposition="left" href="https://www.studiovoice.ru/" target="_self" data-keep-roots="true" data-anchor="c1ruo" id="DrpDwnMn0-sbf0linkElement" class="ddm2repeaterButtonlinkElement">
+                        <a href="#" onclick="return up()">
                             <div class="ddm2repeaterButton_gapper">
                                 <div style="text-align:center" id="DrpDwnMn0-sbf0bg" class="ddm2repeaterButtonbg">
                                     <p style="line-height: 31px;" id="DrpDwnMn0-sbf0label" class="ddm2repeaterButtonlabel">Студия</p>
@@ -3823,7 +3847,7 @@ e-mail:&nbsp;<object height="0">
                         </a>
                     </li>
                     <li data-direction="ltr" data-listposition="center" data-data-id="bmi67f" class="ddm2repeaterButton" data-state="menu  idle link notMobile" id="DrpDwnMn0-sbf1" data-original-gap-between-text-and-btn="0" style="width: 125px; height: 31px; position: relative; box-sizing: border-box; overflow: visible;" aria-hidden="false">
-                        <a role="button" tabindex="0" aria-haspopup="false" data-listposition="center" href="https://www.studiovoice.ru/" target="_self" data-keep-roots="true" data-anchor="cbym" id="DrpDwnMn0-sbf1linkElement" class="ddm2repeaterButtonlinkElement">
+                        <a role="button" tabindex="0" aria-haspopup="false" data-listposition="center" href="#WRchTxt3-dec" target="_self" data-keep-roots="true" data-anchor="cbym" id="DrpDwnMn0-sbf1linkElement" class="ddm2repeaterButtonlinkElement">
                             <div class="ddm2repeaterButton_gapper">
                                 <div style="text-align:center" id="DrpDwnMn0-sbf1bg" class="ddm2repeaterButtonbg">
                                     <p style="line-height: 31px;" id="DrpDwnMn0-sbf1label" class="ddm2repeaterButtonlabel" data-align="center">Услуги</p>
@@ -3832,10 +3856,10 @@ e-mail:&nbsp;<object height="0">
                         </a>
                     </li>
                     <li data-direction="ltr" data-listposition="center" data-data-id="bmin2n" class="ddm2repeaterButton" data-state="menu  idle link notMobile" id="DrpDwnMn0-sbf2" data-original-gap-between-text-and-btn="0" style="width: 150px; height: 31px; position: relative; box-sizing: border-box; overflow: visible;" aria-hidden="false">
-                        <a role="button" tabindex="0" aria-haspopup="false" data-listposition="center" href="https://www.studiovoice.ru/" target="_self" data-keep-roots="true" data-anchor="cy5l" id="DrpDwnMn0-sbf2linkElement" class="ddm2repeaterButtonlinkElement">
+                        <a role="button" tabindex="0" aria-haspopup="false" data-listposition="center" href="#i1ah4z3qline" target="_self" data-keep-roots="true" data-anchor="cy5l" id="DrpDwnMn0-sbf2linkElement" class="ddm2repeaterButtonlinkElement">
                             <div class="ddm2repeaterButton_gapper">
                                 <div style="text-align:center" id="DrpDwnMn0-sbf2bg" class="ddm2repeaterButtonbg">
-                                    <p style=" line-height: 31px;" id="DrpDwnMn0-sbf2label" class="ddm2repeaterButtonlabel">Оборудование</p>
+                                    <p style=" line-height: 31px;" id="DrpDwnMn0-sbf2label" class="ddm2repeaterButtonlabel">О нас </p>
                                 </div>
                             </div>
                         </a>
