@@ -1,10 +1,15 @@
+#component-2 > p{
+	margin: 0 0 14px 0;
+}
 #tabs {
-	width: 965px;
+	width: 900px;
 	position: relative;
-	margin: 0px 0px 5px calc((100% - 980px) * 0.5);
+	/*margin: 0px 0px 5px calc((100% - 980px) * 0.5);*/
+	margin: auto;
 }
 .single-box {
 	display: flex;
+	margin: auto;
 }
 .left_box{ 
 	width:320px; 
@@ -17,13 +22,15 @@
 	/*float:right; */
 	width:560px; 
 	font-size: 14px;
+	margin-left: 50px;
 }
 /* Базовый контейнер табов */
 .tabs {
 	min-width: 320px;
-	max-width: 965px;
+	max-width: 900px;
 	padding: 0px;
 	margin: 0 auto;
+
 }
 
 /* Стили секций с содержанием */
