@@ -8,11 +8,13 @@
     <meta name="generator" content="Wix.com Website Builder">
     <link rel="shortcut icon" href="https://static.wixstatic.com/media/94c4c8_a25a051f5d694f5188a7c41b04429496.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/94c4c8_a25a051f5d694f5188a7c41b04429496.jpg" type="image/jpeg">
     <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/94c4c8_a25a051f5d694f5188a7c41b04429496.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/94c4c8_a25a051f5d694f5188a7c41b04429496.jpg" type="image/jpeg">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slider_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/tabs_styles.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function(){
            $("#menu").on("click","a", function (event) {
                event.preventDefault();
@@ -21,8 +23,30 @@
                $('body,html').animate({scrollTop: top}, 1500);
            });
        });
-       </script>
+       </script> -->
+
+
+<script type="text/javascript">
+    $(function(){
+  $('a[href^="#"]').on('click', function(event) {
+    // отменяем стандартное действие
+    event.preventDefault();
     
+    var sc = $(this).attr("href"),
+        dn = $(sc).offset().top-100;
+    /*
+    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+    * dn - определяем положение блока на странице
+    */
+    
+    $('html, body').animate({scrollTop: dn}, 1000);
+    
+    /*
+    * 1000 скорость перехода в миллисекундах
+    */
+  });
+});
+</script>
 <!-- кнопка возврата на начала страницы -->
     <script type="text/javascript" > 
     function up() {  
@@ -1158,21 +1182,43 @@ $(function(){
 </p>
 </div>
 <div data-packed="true" style="width: 912px; pointer-events: none;" class="txtNew" id="iqavdicp">
-    <p class="font_8">
+<p class="font_8">
 <span style="font-family:play,sans-serif;">
-<span style="font-size:24px; text-align:justify;">Quartamusic – это звукозаписывающий комплекс, состоящий из трех независимых студий с прекрасными акустическими характеристиками, оборудованием самого высокого класса и дружной командой профессионалов.</span>
+<span style="font-size:24px; text-align:justify;">Qu<span style="color: #ff0000;">art</span>amusic – это звукозаписывающий комплекс, состоящий из трех независимых студий&nbsp;с прекрасными акустическими характеристиками, оборудованием самого высокого класса и дружной командой профессионалов.</span>
 </span>
 </p>
 </div>
 <div data-packed="true" style="width: 912px; pointer-events: none;" class="txtNew" id="iqausgih">
 <h2 style="font-size:20px; text-align:justify;" class="font_2">
 <span style="font-size:20px;">
-<span style="font-family:play,sans-serif;">Основатель и учредитель — президент группы компаний «Квартал», заслуженный строитель России Олег Анатольевич Гребёнкин.</span>
+<span style="font-family:play,sans-serif;">
+<div id="component-2">
+    <p>Основатель и учредитель — президент группы компаний «Квартал», заслуженный строитель России Олег Анатольевич Гребёнкин.</p>
+    <p>Созвучные слова, музыкальный интервал «Кварта» и «Квартал» дали нам имя . День рождения мы отмечаем &nbsp;7 сентября с 2007 года.</p>
+    <p style="text-align: justify;">Студия работает с компаниями, продюсерами и артистами разных музыкальных направлений и жанров.</p>
+    <p style="text-align: justify;">С нами сотрудничают :</p>
+    <p style="text-align: justify;">- Стейдж Энтертейнмент&nbsp;&nbsp;(записаны и сведены ледовые шоу «Щелкунчик»&nbsp;и «Снежная королева» в постановке Татьяны Тарасовой, мюзиклы «Звуки музыки», «Мама Мия», «Русалочка»… ),</p>
+    <p style="text-align: justify;">- Black Star inc.,(Тимати, Geegun, L’One…), &nbsp;StudioBis и др.</p>
+    <p style="text-align: justify;">- продюсер Леонид Бурлаков (Мумий Тролль, Земфира, братья Гримм, КимаКима…) -&nbsp;<span style="line-height: 24px;">продюсеры,&nbsp;</span>известные преподаватели вокала — Владимир Коробка и Марина Леонова (все “Фабрики Звёзд” на Первом канале).</p>
+    <p style="text-align: justify;">- Николай Арутюнов, основатель и лидер группы «Лига блюза» — одной из самых именитых отечественных блюзовых команд России (2 альбома).</p>
+    <p style="text-align: justify;">- Вячеслав Малежик — песни в инструментальном варианте с&nbsp;ансамблем солистов «Концертино».</p>
+    <p style="text-align: justify;">В разное время на Qu<span style="color: #ff0000;">art</span>amusic&nbsp;записывали альбомы и синглы талантливые группы и исполнители: BambleBee, Armaga, Backstage, Полина Гриффис (экс-солистка А-Студио), N.А.О.М.I и Вл. Пресняков мл., Карина Кокс, Лама, Сергей Лазарев, Влад Топалов…</p>
+    <p style="text-align: justify;">Альбом Тимати «The Boss», записанный в октябре 2009 года, получил высшую награду премии MузТВ в номинации «Лучший Альбом».</p>
+    <p style="text-align: justify;">Записи, созданные на студии звучат на радио, ТВ и в Интернете. Многие песни сделаны для видео клипов.</p>
+    <p style="text-align: justify;">Qu<span style="color: #ff0000;">art</span>amusic, по мнению музыкантов и артистов, одна из самых оснащённых и уютных студий страны.</p>
+    <p style="text-align: justify;">В студии А установлена 96-ти канальная аналоговая консоль с цифровым управлением Euphonix CS 2000, цифровые рабочие станции Pyramix и ProTools HD2. Конвертеры Merging Sphynx 2, Mytek ADA 192, Apogee DA-16x, мониторы Quested HQ210, Quested S7, Yamaha NS-10M, приборы Lexicon 960 и T.C.Electronic 6000.</p>
+    <p style="text-align: justify;">Студия В — классический, 20/4/4 пульт Studer 963, конвертеры DCS 905 и Apogee Rosetta 800, мониторы KRK-V8, Yamaha NS-10m. Преампы и приборы динамической обработки UA 6176, API 7600.</p>
+    <p style="text-align: justify;">Студия С — располагает тем же микрофонным парком что и предыдущие студии. Manley mono mic-pre, конвертер Apogee Rosetta 800, мониторы Harbeth M20.</p>
+    <p style="text-align: justify;">В нашем микрофонном парке 3хTelefunken ELA-M 251 в которые поют Elton John,&nbsp;Stevie Wonder, Christina Aguilera, Mariah Carey и многие другие мировые звёзды, два винтажных Neumann 87, стерео микрофоны Neumann SM2 и Neumann SM69 F.E.T.</p>
+    <p style="text-align: justify;">При всём вышеперечисленном Qu<span style="color: #ff0000;">art</span>amusic является, самой демократичной студией Москвы в отношении цен на запись.</p>
+    <p style="text-align: justify;">Мы делаем максимум для того, чтобы вы создавали МУЗЫКУ !</p>
+</div>
+</span>
 </span>
 
 </h2>
 </div>
-<div data-packed="true" style="width: 913px; pointer-events: none;" class="txtNew" id="ivzhhv2p">
+<!-- <div data-packed="true" style="width: 913px; pointer-events: none;" class="txtNew" id="ivzhhv2p">
 <h2 style="font-size:20px; text-align:justify;" class="font_2">
 <span style="font-size:20px;">
 <span style="font-family:play,sans-serif;">Созвучные слова, музыкальный интервал «Кварта» и «Квартал» дали нам имя. День рождения мы отмечаем  7 сентября с 2007 года.</span>
@@ -1235,11 +1281,157 @@ $(function(){
 <span style="font-family:open sans condensed,sans-serif;">Вы получаете готовый продукт, без дополнительных финансовых затрат!</span>
 </span>
 </h2>
+</div> -->
+
+</div>
+
+</div>
+
+</div>
+<div style="transform-origin:center center;top:;bottom:;left:;right:;width:965px;height:29px;position:;margin-top: 50px" class="hl2" id="i1ah4z3q1">
+<div class="hl2cont">
+<div class="hl2line">
 </div>
 </div>
 </div>
 </div>
+
+
+<div id="tabs">
+    <div class="tabs">
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1" title="Студия A">Студия A</label>
+     
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2" title="Студия B">Студия B</label>
+     
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3" title="Студия C">Студия C</label>
+     
+        <section id="content-tab1">
+        <div class="single-box">
+           
+            <div class="left_box"><br>
+            <h3 class="category-title">Студия А</h3>    
+            <img class="alignleft size-medium wp-image-230" title="Студия А" src="http://quartamusic.com/wp-content/uploads/2011/12/1-570x380.jpg" alt="" width="320" height="213"><p></p>
+            <p><img class="alignleft size-medium wp-image-233" title="Студия А" src="http://quartamusic.com/wp-content/uploads/2011/12/4-570x380.jpg" alt="" width="320" height="213"></p>
+            <p><img class="alignleft size-medium wp-image-231" title="Студия А" src="http://quartamusic.com/wp-content/uploads/2011/12/2-570x380.jpg" alt="" width="320" height="213"></p>
+            <p><img class="alignleft size-medium wp-image-234" title="Студия А" src="http://quartamusic.com/wp-content/uploads/2011/12/5-570x380.jpg" alt="" width="320" height="213"></p>
+            <p></p></div>
+            <div class="right_box"><br>
+            <strong>Консоль:</strong><br>
+            • Euphonix CS2000 — 96ти канальная полностью автоматизированная<br>
+            аналоговая консоль с цифровым управлением.<br>
+            • 5 x ES 108 (40 каналов динамической обработки euphonix).<br>
+            <strong>Цифровые рабочие станции:</strong><br>
+            • PYRAMIX Virtual Studio<br>
+            • Digidesign Pro Tools HD3<br>
+            <strong>Конвертеры:</strong><br>
+            • 2x Merging Sphynx 2 (8/8 ADDA)<br>
+            • 2x Apogee DA 16X<br>
+            <strong>Интерфейсы ввода-вывода:</strong><br>
+            • 2x Mykerinos DSP<br>
+            • 2x AES/EBU DSD I/O CARD<br>
+            • Digidesign digital I/O 16<br>
+            • M-Audio midisport 8×8<br>
+            <strong>Мониторы:</strong><br>
+            • Quested HQ 210<br>
+            • Quested S 7<br>
+            • Yamaha NS 10M studio<br>
+            <strong>Мониторные усилители:</strong><br>
+            • Quested AP 800<br>
+            • Studer<br>
+            <strong>Предусилители:</strong><br>
+            • Sphynx 2 — 8-ми канальный дистанционно управляемый предусилитель<br>
+            • Universal audio 2108<br>
+            • Universal audio 6176<br>
+            • 4x Digilab SPM-102 SE<br>
+            <strong>Динамическая обработка:</strong><br>
+            • API 2500 stereo bus compressor<br>
+            • Manley Vari Mu stereo valve compressor<br>
+            • 2x Empirical Labs Distressor EL 8<br>
+            • 2x Digilab Turbo-Soft mono compressor<br>
+            • SPL Deesser<br>
+            <strong>Эквалайзеры:</strong><br>
+            • Avalon AD 2055 stereo parametric<br>
+            • Tube-Tech PE -1C program equalizer<br>
+            • 2x Digilab SPE 100F pultec type<br>
+            • Digilab SPX 250 Hi spectral processor<br>
+            • Digilab SPX 200 Low spectral processor<br>
+            • DBX 120 A Subharmonic Synth.<br>
+            <strong>Процессоры эффектов:</strong><br>
+            • T.C. Electronic System 6000 (MD-4)<br>
+            • Lexicon 960 LS<br>
+            • Yamaha REV 7<br>
+            </div>
+         </div>
+        </section>  
+        <section id="content-tab2">
+            <div class="single-box">
+                
+                <div class="left_box"><br>
+                <h3 class="category-title">Студия B</h3>    
+                <img class="alignleft size-medium wp-image-236" title="Студия B" src="http://quartamusic.com/wp-content/uploads/2011/12/studiya-b_2-570x380.jpg" alt="" width="320" height="213"><br>
+                <img class="alignleft size-medium wp-image-235" title="Студия B" src="http://quartamusic.com/wp-content/uploads/2011/12/studiya-b_1-570x380.jpg" alt="" width="320" height="213"></div>
+                <p>&nbsp;</p>
+                <div class="right_box"><br>
+                <strong>Консоль:</strong><br>
+                • Studer 963 — 20/4/4<br>
+                <strong>Конвертеры:</strong><br>
+                • DCS ADC 905<br>
+                • Apogee Rosetta 800<br>
+                <strong>Цифровой интерфейс:</strong><br>
+                • Lynx AES 16<br>
+                <strong>Мониторы:</strong><br>
+                • KRK V-8<br>
+                • Yamaha NS 10M Studio<br>
+                <strong>Предусилитель:</strong><br>
+                • API 7600 Channel Strip<br>
+                <strong>Динамическая обработка:</strong><br>
+                • Digilab Turbo-Soft mono compressor<br>
+                • DBX 120 A Subharmonic Synth.<br>
+                • Universal Audio UAD ultra pack<br>
+                <strong>Процессоры эффектов:</strong><br>
+                • Roland 3030D<br>
+                • T.C. Electronic M2000<br>
+                </div>
+            </div>
+        </section> 
+        <section id="content-tab3">
+            <div class="single-box">
+            
+                <div class="left_box"><br>
+                <h3 class="category-title">Студия С</h3>
+                <img class="alignleft size-medium wp-image-238" title="Студия C" src="http://quartamusic.com/wp-content/uploads/2011/12/studio_c_2-570x380.jpg" alt="" width="320" height="213"><img class="alignleft size-medium wp-image-237" title="Студия C" src="http://quartamusic.com/wp-content/uploads/2011/12/studio_c_1-570x380.jpg" alt="" width="320" height="213"><p></p>
+                <p></p></div>
+                <div class="right_box"><br>
+                <p><strong>Мониторный пульт:</strong><br>
+                • Digilab CRM 426<br>
+                <strong>Конвертер:</strong><br>
+                • Apogee Rosetta 800<br>
+                <strong>Цифровой интерфейс:</strong><br>
+                • Lynx AES16<br>
+                <strong>Мониторы:</strong><br>
+                • Harbeth M 20<br>
+                • Sony 7506 — Headphones<br>
+                <strong>Предусилитель:</strong><br>
+                • Manley tube mono mic-pre<br>
+                <strong>Компрессор:</strong><br>
+                • Digilab Turbo-Soft SPL 300 – Studio soft vocal compressor<br>
+                <strong>Синтезаторы и звуковыые модули:</strong><br>
+                • Kurzweil PC2R<br>
+                • Novation Supernova II Pro X<br>
+                • Roland V-Synth XT<br>
+                • Roland Fantom<br>
+                • M-Audio Keystation Pro 88 USB MIDI Keyboard</p>
+                <p></p></div>
+            </div>
+        </section>  
+    </div>
 </div>
+
+
+
 <!-- <div style="top:;bottom:;left:;right:;position:" class="c2" id="ivzkkviy">
 <div id="ivzkkviybg" class="c2bg">
 </div>
@@ -3811,7 +4003,7 @@ e-mail:&nbsp;<object height="0">
             </a> -->
         </div>
         <div style="width: 221px; height: 76px;" class="ImageButton_1" data-state="supports_opacity transition_fade   " id="i0p6st1t">
-            <a href="https://www.studiovoice.ru/" target="_self" data-keep-roots="true" data-anchor="c1ruo" title="" style="width:221px;height:76px" id="i0p6st1tlink" class="ImageButton_1link">
+            <a href="#" onclick="return up()" target="_self" data-keep-roots="true" data-anchor="c1ruo" title="" style="width:221px;height:76px" id="i0p6st1tlink" class="ImageButton_1link">
                 <div class="ImageButton_1_correct-positioning">
                     <wix-image style="width:221px;height:76px;top:0;left:0" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;alt&quot;:&quot;&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;c_defaultImage10mm&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;studiovoice_final.ai.png&quot;,&quot;uri&quot;:&quot;94c4c8_c2b5dc1c4ac8486bbb43c3aba37596f5.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1759,&quot;height&quot;:1007,&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;i0p6st1t&quot;,&quot;displayMode&quot;:&quot;full&quot;}" id="i0p6st1tdefaultImage" class="ImageButton_1defaultImage" data-src="https://static.wixstatic.com/media/94c4c8_c2b5dc1c4ac8486bbb43c3aba37596f5.png/v1/fill/w_133,h_76,al_c,usm_0.66_1.00_0.01/94c4c8_c2b5dc1c4ac8486bbb43c3aba37596f5.png" data-is-svg="false">
                         <img id="i0p6st1tdefaultImageimage" style="object-position:50% 50%;width:221px;height:76px;object-fit:contain" alt="" data-type="image" itemprop="image" src="Studio_voice/94c4c8_c2b5dc1c4ac8486bbb43c3aba37596f5.png">
@@ -3838,7 +4030,7 @@ e-mail:&nbsp;<object height="0">
             <nav>
                 <ul style="text-align:center" aria-label="Site navigation" role="navigation" id="menu" class="ddm2itemsContainer">
                     <li data-direction="ltr" data-listposition="left" data-data-id="bmic7u" class="ddm2repeaterButton" data-state="menu selected idle link notMobile" id="DrpDwnMn0-sbf0" data-original-gap-between-text-and-btn="0" style="width: 76px; height: 50px; position: relative; box-sizing: border-box; overflow: visible;" aria-hidden="false">
-                        <a href="#" onclick="return up()">
+                        <a href="#i1ah4z3q1" id="studio_scroll">
                             <div class="ddm2repeaterButton_gapper">
                                 <div style="text-align:center" id="DrpDwnMn0-sbf0bg" class="ddm2repeaterButtonbg">
                                     <p style="line-height: 31px;" id="DrpDwnMn0-sbf0label" class="ddm2repeaterButtonlabel">Студия</p>
