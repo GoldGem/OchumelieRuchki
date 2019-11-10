@@ -4941,7 +4941,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 .ddm2dropWrapper {z-index:99999;display:block;opacity:1;visibility:hidden;position:absolute;margin-top:7px;}
 .ddm2 > nav {position:absolute;top:0;right:0;bottom:0;left:0;}
 .ddm2dropWrapper[data-dropMode="dropUp"] {margin-top:0;margin-bottom:7px;}
-.ddm2repeaterButton {height:100%;position:relative;box-sizing:border-box;display:inline-block;cursor:pointer;font:normal normal normal 16px/1.4em play,sans-serif;}
+.ddm2repeaterButton {height:100%;position:relative;box-sizing:border-box;display:inline-block;cursor:pointer;font:normal normal normal 16px/1.4em play,sans-serif;float:left;}
 .ddm2repeaterButton[data-state~="header"] a,.ddm2repeaterButton[data-state~="header"] div {cursor:default !important;}
 .ddm2repeaterButtonlinkElement {display:inline-block;height:100%;width:100%;}
 .ddm2repeaterButton_gapper {padding:0 0px;}
@@ -5193,7 +5193,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 .ImageButton_1activeImage {overflow:hidden;}
 .ImageButton_1activeImageimage {position:static;box-shadow:#000 0 0 0;}
 
-.hl2cont {width:100%;overflow:hidden;position:relative;}
+.hl2cont {width:100%;overflow:hidden;position:relative;margin-top:50px;}
 .hl2cont:after {background-image:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/fade_line.png);background-position:0 0;height:29px;left:0;position:absolute;top:0;width:100px;content:"";}
 .hl2cont:before {background-image:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/fade_line.png);background-position:100% 0;height:29px;right:0;position:absolute;top:0;width:100px;content:"";}
 .hl2line {background-image:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/fade_line.png);background-position:0 -29px;margin:0 100px;height:29px;}
@@ -7680,7 +7680,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 #ig2pj479 {
     position: relative;
     width: 660px;
-    margin: 0px 0px 15px calc((100% - 840px) * 0.5);
+    margin: 0px 0px 15px calc((100% - 940px) * 0.5);
     left: 225px;
     grid-area: 4 / 1 / 5 / 2;
     justify-self: start;

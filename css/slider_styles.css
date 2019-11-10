@@ -38,7 +38,6 @@
 .slide figure {
   display: block;
   position: relative;
-  text-align: center;
 }
 .slide figure figcaption {
   position: absolute;
