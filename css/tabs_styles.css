@@ -132,7 +132,10 @@
 	background: #fff;
 }
 /* Активация секций с помощью псевдокласса :checked */
-#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3 {
+	display: block;
+}
+#tab1_eq:checked~#content-tab1_eq, #tab2_eq:checked~#content-tab2_eq  {
 	display: block;
 }
 /* Убираем текст с переключателей 
