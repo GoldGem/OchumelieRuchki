@@ -6170,10 +6170,11 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 #iwow70x0 {
     position: relative;
     margin: 0px 0px -292px calc((100% - 980px) * 0.5);
-    left: -226px;
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
     align-self: start;
+    left: -300px;
+
 }
 
 #i0o6opec {
