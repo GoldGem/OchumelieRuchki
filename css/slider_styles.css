@@ -3,7 +3,7 @@
   max-width: 1000px;
   min-width: 280px;
   margin: 0 auto;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
 }
 /** Glidejs styles **/
 .slider {
@@ -42,7 +42,7 @@
 }
 .slide figure figcaption {
   position: absolute;
-  right: 20%;
+  right: 8%;
   font-size: 1.1em;
   font-weight: bold;
   padding: 8px 14px;
@@ -93,12 +93,14 @@
 }
 
 .slider-nav__item {
+  position: relative;
   width: 12px;
   height: 12px;
   float: left;
   clear: none;
   display: block;
-  margin: 0 5px;
+  margin-top: 10px;
+  margin: 100px 5px 0px 5px;
   background: #bababa;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
