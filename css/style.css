@@ -6173,7 +6173,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
     align-self: start;
-    left: -300px;
+    /*left: -300px;*/
 
 }
 
