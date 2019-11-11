@@ -14,14 +14,16 @@
 .left_box{ 
 	width:320px; 
 	/*float:left;*/
+	margin-left: 20px;
 }
 .left_box img{ 
 	max-width:320px;
+	margin-top: 10px;
 }
 .right_box{ 
 	/*float:right; */
 	width:560px; 
-	font-size: 14px;
+	font-size: 16px;
 	margin-left: 50px;
 }
 /* Базовый контейнер табов */
@@ -167,4 +169,16 @@
 }
 .fa-microphone-alt {
 	font-size: 15px;
+}
+.fa-volume-up {
+	font-size: 15px;
+}
+.fa-music {
+	font-size: 15px;
+}
+#div-content-tab1_eq {
+	margin-left: 20px;
+}
+#div-content-tab2_eq {
+	margin-left: 20px;
 }

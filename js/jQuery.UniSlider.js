@@ -222,7 +222,7 @@ console.log($(window).outerWidth());
 				elem.append('<div class="focuButton-'+settings.class+' leftfocuButton-'+settings.class+'"><i class="fas fa-arrow-circle-left"></i></div>');
 				elem.append('<div class="focuButton-'+settings.class+' rightfocuButton-'+settings.class+'"><i class="fas fa-arrow-circle-right"></i></div>');
 
-				$('.focuButton-'+settings.class).css({
+				/*$('.focuButton-'+settings.class).css({
 					position: 'absolute',
 					background: 'rgba(0,0,0,0.5)',
 					padding:'8px',
@@ -234,7 +234,7 @@ console.log($(window).outerWidth());
 					border: '1px solid rgba(255,255,255,0.2)',
 					cursor:'pointer',
 					display: settings.displaybuttons
-				});
+				});*/
 
 				$('.leftfocuButton-'+settings.class).css({
 					left:0
