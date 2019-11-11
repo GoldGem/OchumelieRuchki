@@ -7681,7 +7681,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 #ig2pj479 {
     position: relative;
     width: 660px;
-    margin: 0px 0px 15px calc((100% - 1440px) * 0.5);
+    margin: 0px 0px 15px calc((100% - 730px) * 0.5);
     left: 225px;
     grid-area: 4 / 1 / 5 / 2;
     justify-self: start;
@@ -7712,6 +7712,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 #SITE_HEADERinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
     pointer-events: auto;
 }
+
 /* стили для прелоудера */
 #p_prldr{
   position: fixed;
