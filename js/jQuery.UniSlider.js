@@ -219,8 +219,8 @@ console.log($(window).outerWidth());
 
 			if(settings.handler == 'click'){
 				
-				elem.append('<div class="focuButton-'+settings.class+' leftfocuButton-'+settings.class+'">Left</div>');
-				elem.append('<div class="focuButton-'+settings.class+' rightfocuButton-'+settings.class+'">Right</div>');
+				elem.append('<div class="focuButton-'+settings.class+' leftfocuButton-'+settings.class+'"><i class="fas fa-arrow-circle-left"></i></div>');
+				elem.append('<div class="focuButton-'+settings.class+' rightfocuButton-'+settings.class+'"><i class="fas fa-arrow-circle-right"></i></div>');
 
 				$('.focuButton-'+settings.class).css({
 					position: 'absolute',
