@@ -7681,7 +7681,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 #ig2pj479 {
     position: relative;
     width: 660px;
-    margin: 0px 0px 15px calc((100% - 940px) * 0.5);
+    margin: 0px 0px 15px calc((100% - 1440px) * 0.5);
     left: 225px;
     grid-area: 4 / 1 / 5 / 2;
     justify-self: start;
@@ -7712,4 +7712,38 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 #SITE_HEADERinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
     pointer-events: auto;
 }
-
+/* стили для прелоудера */
+#p_prldr{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  background: #ffffff;
+  background-position: cover;
+  z-index: 9999999999;}
+   
+  .contpre small{font-size:25px;}
+   
+  .contpre{
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 50%;top: 48%;
+  margin-left:-125px;
+  margin-top:-75px;
+  color:#000000;
+  font-size:40px;
+  letter-spacing:-2px;
+  text-align:center;
+  line-height:35px;}
+   
+  #p_prldr .svg_anm {
+  position: absolute;
+  top:90px;
+  left:50px;
+  width: 150px;
+  height: 100px;
+  background: url(../Studio_voice/Infinity-10s-180px.svg) center center no-repeat;
+  background-size:100px;    
+  /* конец прелоудера */

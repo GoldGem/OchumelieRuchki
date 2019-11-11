@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="" lang="ru">
 <head>
+        <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     
@@ -14,8 +15,15 @@
     <link rel="stylesheet" type="text/css" href="css/contacts.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-
-
+    <!-- preloader -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script type="text/javascript">$(window).on('load', function () {
+        var $preloader = $('#p_prldr'),
+            $svg_anm   = $preloader.find('.svg_anm');
+        $svg_anm.fadeOut();
+        $preloader.delay(500).fadeOut('slow');
+    });</script>
+    <!-- preloader end -->
     <script src="js/jQuery.UniSlider.js"></script>
     <script>
         $(document).ready(function(){
@@ -83,7 +91,6 @@
 
     
         <meta id="wixMobileViewport" name="viewport" content="width=980, user-scalable=yes">
-    
     
     
     
@@ -573,7 +580,7 @@
 
             
                 <body class="" data-js-loaded="true" style="">
-            
+                    
 
     
 
@@ -1531,9 +1538,9 @@ $(function(){
                 <section id="content-tab2_eq">
                         <div style="font-size:20px; text-align:justify;width: 500px; margin-left: 50px;" class="font_2">
                           <h3 style="text-align: center;">Контакты</h3>
-                          <p style="flex-wrap: nowrap;">Адрес: <br style="margin-top: 5px;">
+                          <p style="flex-wrap: nowrap;"> <b>Адрес: </b> <br>
                             Ленинский проспект, д. 106/1 <br style="margin-top: 5px;">
-                            Телефон<br style="margin-top: 5px;">
+                            <b>Телефон:</b><br style="margin-top: 5px;">
                             +7 (495) 722-0234 - студия QU<span style="color: #ff0000;">ART</span>AMUSIC<br style="margin-top: 5px;">
                             +7 (495) 720-7046 - директор студии Валерий Костин</p>
                         </div>
