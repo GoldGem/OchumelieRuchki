@@ -4948,8 +4948,8 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 .ddm2repeaterButtonlabel {display:inline-block;padding:0 10px;color:#616161;transition:color 0.4s ease 0s;}
 .ddm2repeaterButton[data-state~="drop"] {width:100%;display:block;}
 .ddm2repeaterButton[data-state~="drop"] .ddm2repeaterButtonlabel {padding:0 .5em;}
-.ddm2repeaterButton[data-state~="over"] .ddm2repeaterButtonlabel,.ddm2repeaterButton[data-preview~="hover"] .ddm2repeaterButtonlabel {color:#000000;transition:color 0.4s ease 0s;}
-.ddm2repeaterButton[data-state~="selected"] .ddm2repeaterButtonlabel,.ddm2repeaterButton[data-preview~="active"] .ddm2repeaterButtonlabel {color:#000000;transition:color 0.4s ease 0s;}
+.ddm2repeaterButton[data-state~="over"] .ddm2repeaterButtonlabel,.ddm2repeaterButton[data-preview~="hover"] .ddm2repeaterButtonlabel {transition:color 0.4s ease 0s;}
+.ddm2repeaterButton[data-state~="selected"] .ddm2repeaterButtonlabel,.ddm2repeaterButton[data-preview~="active"] .ddm2repeaterButtonlabel {ransition:color 0.4s ease 0s;}
                 
 
 .gm1[data-state~="squared"],.gm1[data-state~="squared"] .gm1mapContainer {border-radius:0;}
