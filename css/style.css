@@ -622,11 +622,11 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cc642b17-a005-4f1e-86e8-baffa4647445.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/a9eddc47-990d-47a3-be4e-c8cdec0090c6.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8d108476-7a62-4664-821f-03c8a522c030.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7823e34c-67dc-467a-bbfb-efbb5f6c90f0.svg#7823e34c-67dc-467a-bbfb-efbb5f6c90f0") format("svg");
 }
 
-@font-face {
+/*@font-face {
     font-family: "Helvetica-W01-Light";
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/717f8140-20c9-4892-9815-38b48f14ce2b.eot?#iefix");
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/717f8140-20c9-4892-9815-38b48f14ce2b.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/03805817-4611-4dbc-8c65-0f73031c3973.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d5f9f72d-afb7-4c57-8348-b4bdac42edbb.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/05ad458f-263b-413f-b054-6001a987ff3e.svg#05ad458f-263b-413f-b054-6001a987ff3e") format("svg");
-}
+}*/
 
 @font-face {
     font-family: "Victoria-Titling-MT-W90";
@@ -700,11 +700,11 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/5af7511a-dccc-450d-b2a2-bb8e3bb62540.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/05b176f5-c622-4c35-af98-c0c056dd5b66.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/9dcb5a3c-1c64-4c9c-a402-995bed762eb7.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/1e87d66a-d7f1-4869-8430-51662777be57.svg#1e87d66a-d7f1-4869-8430-51662777be57") format("svg");
 }
 
-@font-face {
+/*@font-face {
     font-family: "Nimbus-Sans-TW01Con";
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2101adaa-6a98-4fa9-b085-3b04c3722637.eot?#iefix");
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2101adaa-6a98-4fa9-b085-3b04c3722637.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8fb1090e-b4d0-4685-ac8f-3d0c29d60130.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/5d5fc44e-e84b-48ca-a5a7-bed8bdbf79a1.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/24512b2a-e22d-4ebb-887c-a334d039433c.svg#24512b2a-e22d-4ebb-887c-a334d039433c") format("svg");
-}
+}*/
 
 @font-face {
     font-family: "Bodoni-W01-Poster";
@@ -948,11 +948,11 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/04bcef92-4ec9-4491-9f06-433987df0eea.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4e5713c6-f9bf-44d7-bc17-775b7c102f1c.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/80e40eb9-815f-4b42-9e99-297117a6ef52.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/25bb0c90-be7f-4dfc-bfff-5cd159d09832.svg#25bb0c90-be7f-4dfc-bfff-5cd159d09832") format("svg");
 }
 
-@font-face {
+/*@font-face {
     font-family: "Helvetica-W02-Light";
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ff80873b-6ac3-44f7-b029-1b4111beac76.eot?#iefix");
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ff80873b-6ac3-44f7-b029-1b4111beac76.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/80c34ad2-27c2-4d99-90fa-985fd64ab81a.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b8cb02c2-5b58-48d8-9501-8d02869154c2.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/92c941ea-2b06-4b72-9165-17476d424d6c.svg#92c941ea-2b06-4b72-9165-17476d424d6c") format("svg");
-}
+}*/
 
 @font-face {
     font-family: "Soho-W02-Thin-Condensed";
