@@ -478,8 +478,9 @@
 			if ( this.options.autoplay ) {
 
 				clearTimeout( this.slideshow );
-				this.isPlaying = false;
-				this.options.autoplay = false;
+				this.isPlaying = true;
+				this.options.autoplay = true;
+				this._startSlideshow();
 
 			}
 

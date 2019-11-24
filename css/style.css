@@ -7182,6 +7182,9 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     justify-self: start;
     align-self: start;
 }
+#iqavdicp div{
+    margin-top: 20px;
+}
 
 #iqausgih {
     position: relative;
