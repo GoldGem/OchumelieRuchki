@@ -6,15 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="Studio_voice/a_data/12965824_1401234856842178_269137396_a.png" >
-    <link rel="apple-touch-icon" href="Studio_voice/a_data/12965824_1401234856842178_269137396_a">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/tabs_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/tabs_style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <link href="css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/slider_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+    </noscript>
+    
+
+    
     
     <!-- preloader -->
+
+
     <script type="text/javascript">$(window).on('load', function () {
         var $preloader = $('#p_prldr'),
             $svg_anm   = $preloader.find('.svg_anm');
@@ -22,7 +35,7 @@
         $preloader.delay(500).fadeOut('slow');
     });</script>
     <!-- preloader end -->
-    <script src="js/jQuery.UniSlider.js"></script>
+    <!-- <script src="js/jQuery.UniSlider.js"></script>
     <script>
         $(document).ready(function(){
 
@@ -30,7 +43,7 @@
 
 
          });
-   </script>
+   </script> -->
 
 <script type="text/javascript">
     $(function(){
@@ -270,7 +283,7 @@
 
 
 
-<div class="UniSlider">
+<!-- <div class="UniSlider">
 <div id="slider_selector">
     <img src="slider_img/mic1.jpg" alt="" data-title="" />
     <img src="slider_img/mic2.jpg" alt="" data-title="" />
@@ -281,10 +294,134 @@
     <img src="slider_img/mic7.jpg" alt="" data-title="" />
 
 </div>
-</div>
+</div> -->
 
+<!-- -----------------PICTURE------SLIDER---------------------------- -->
 
+<div id="slider" class="sl-slider-wrapper">
 
+                <div class="sl-slider">
+                
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img bg-img-1"></div>
+                            <h2>A bene placito.</h2>
+                            <blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img bg-img-2"></div>
+                            <h2>Regula aurea.</h2>
+                            <blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img bg-img-3"></div>
+                            <h2>Dum spiro, spero.</h2>
+                            <blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img bg-img-4"></div>
+                            <h2>Donna nobis pacem.</h2>
+                            <blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img bg-img-5"></div>
+                            <h2>Acta Non Verba.</h2>
+                            <blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+                        </div>
+                    </div>
+                </div><!-- /sl-slider -->
+
+                <nav id="nav-dots" class="nav-dots">
+                    <span class="nav-dot-current"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </nav>
+
+            </div><!-- /slider-wrapper -->
+
+<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slitslider.js"></script>
+        <script type="text/javascript"> 
+            $(function() {
+            
+                var Page = (function() {
+
+                    var $nav = $( '#nav-dots > span' ),
+                        slitslider = $( '#slider' ).slitslider( {
+                            onBeforeChange : function( slide, pos ) {
+
+                                $nav.removeClass( 'nav-dot-current' );
+                                $nav.eq( pos ).addClass( 'nav-dot-current' );
+
+                            }
+                        } ),
+
+                        init = function() {
+
+                            initEvents();
+                            
+                        },
+                        initEvents = function() {
+
+                            $nav.each( function( i ) {
+                            
+                                $( this ).on( 'click', function( event ) {
+                                    
+                                    var $dot = $( this );
+                                    
+                                    if( !slitslider.isActive() ) {
+
+                                        $nav.removeClass( 'nav-dot-current' );
+                                        $dot.addClass( 'nav-dot-current' );
+                                    
+                                    }
+                                    
+                                    slitslider.jump( i + 1 );
+                                    return false;
+                                
+                                } );
+                                
+                            } );
+
+                        };
+
+                        return { init : init };
+
+                })();
+
+                Page.init();
+
+                /**
+                 * Notes: 
+                 * 
+                 * example how to add items:
+                 */
+
+                /*
+                
+                var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+                
+                // call the plugin's add method
+                ss.add($items);
+
+                */
+            
+            });
+        </script>
 
 
 
@@ -679,41 +816,47 @@
             <div data-packed="true" style="width: 504px; pointer-events: none;" class="txtNew" id="iqauqbfn">
 <p style="font-size:36px; margin-top: 20px;" class="font_8">
 <span style="font-weight:bold;">
-<span style="font-size:36px;">QU<span style="color: #ff0000;">ART</span>AMUSIC</span>
+<span style="font-size:36px;">О нас СОЮЗ Голос</span>
 </span>
 </p>
 </div>
 <div data-packed="true" style="width: 912px; pointer-events: none;" class="txtNew" id="iqavdicp">
+<div>
 <p class="font_8">
 <span style="font-family:play,sans-serif;">
-<span style="font-size:24px; text-align:justify;">Qu<span style="color: #ff0000;">art</span>amusic – это звукозаписывающий комплекс, состоящий из трех независимых студий&nbsp;с прекрасными акустическими характеристиками, оборудованием самого высокого класса и дружной командой профессионалов.</span>
+<span style="font-size:24px; text-align:justify;">СОЮЗ Голос – это звукозаписывающий комплекс с прекрасными акустическими характеристиками, оборудованием самого высокого класса и дружной командой профессионалов.</span>
+
 </span>
 </p>
+</div>
+<div>
+<p class="font_8">
+<span style="font-family:play,sans-serif;">
+<span style="font-size:24px; text-align:justify;">Студия работает с компаниями, продюсерами и артистами разных музыкальных направлений и жанров.</span>
+
+</span>
+</p>
+</div>
+<div>
+<p class="font_8">
+<span style="font-family:play,sans-serif;">
+<span style="font-size:24px; text-align:justify;">Записи, созданные на студии звучат на радио и ТВ. Многие песни сделаны для видео клипов.</span>
+
+</span>
+</p>
+</div>
 </div>
 <div data-packed="true" style="width: 912px; pointer-events: none;" class="txtNew" id="iqausgih">
 <h2 style="font-size:20px; text-align:justify;" class="font_2">
 <span style="font-size:20px;">
 <span style="font-family:play,sans-serif;">
 <div id="component-2">
-    <p>Основатель и учредитель — президент группы компаний «Квартал», заслуженный строитель России Олег Анатольевич Гребёнкин.</p>
-    <p>Созвучные слова, музыкальный интервал «Кварта» и «Квартал» дали нам имя . День рождения мы отмечаем &nbsp;7 сентября с 2007 года.</p>
-    <p style="text-align: justify;">Студия работает с компаниями, продюсерами и артистами разных музыкальных направлений и жанров.</p>
-    <p style="text-align: justify;">С нами сотрудничают :</p>
-    <p style="text-align: justify;">- Стейдж Энтертейнмент&nbsp;&nbsp;(записаны и сведены ледовые шоу «Щелкунчик»&nbsp;и «Снежная королева» в постановке Татьяны Тарасовой, мюзиклы «Звуки музыки», «Мама Мия», «Русалочка»… ),</p>
-    <p style="text-align: justify;">- Black Star inc.,(Тимати, Geegun, L’One…), &nbsp;StudioBis и др.</p>
-    <p style="text-align: justify;">- продюсер Леонид Бурлаков (Мумий Тролль, Земфира, братья Гримм, КимаКима…) -&nbsp;<span style="line-height: 24px;">продюсеры,&nbsp;</span>известные преподаватели вокала — Владимир Коробка и Марина Леонова (все “Фабрики Звёзд” на Первом канале).</p>
-    <p style="text-align: justify;">- Николай Арутюнов, основатель и лидер группы «Лига блюза» — одной из самых именитых отечественных блюзовых команд России (2 альбома).</p>
-    <p style="text-align: justify;">- Вячеслав Малежик — песни в инструментальном варианте с&nbsp;ансамблем солистов «Концертино».</p>
-    <p style="text-align: justify;">В разное время на Qu<span style="color: #ff0000;">art</span>amusic&nbsp;записывали альбомы и синглы талантливые группы и исполнители: BambleBee, Armaga, Backstage, Полина Гриффис (экс-солистка А-Студио), N.А.О.М.I и Вл. Пресняков мл., Карина Кокс, Лама, Сергей Лазарев, Влад Топалов…</p>
-    <p style="text-align: justify;">Альбом Тимати «The Boss», записанный в октябре 2009 года, получил высшую награду премии MузТВ в номинации «Лучший Альбом».</p>
-    <p style="text-align: justify;">Записи, созданные на студии звучат на радио, ТВ и в Интернете. Многие песни сделаны для видео клипов.</p>
-    <p style="text-align: justify;">Qu<span style="color: #ff0000;">art</span>amusic, по мнению музыкантов и артистов, одна из самых оснащённых и уютных студий страны.</p>
-    <p style="text-align: justify;">В студии А установлена 96-ти канальная аналоговая консоль с цифровым управлением Euphonix CS 2000, цифровые рабочие станции Pyramix и ProTools HD2. Конвертеры Merging Sphynx 2, Mytek ADA 192, Apogee DA-16x, мониторы Quested HQ210, Quested S7, Yamaha NS-10M, приборы Lexicon 960 и T.C.Electronic 6000.</p>
-    <p style="text-align: justify;">Студия В — классический, 20/4/4 пульт Studer 963, конвертеры DCS 905 и Apogee Rosetta 800, мониторы KRK-V8, Yamaha NS-10m. Преампы и приборы динамической обработки UA 6176, API 7600.</p>
-    <p style="text-align: justify;">Студия С — располагает тем же микрофонным парком что и предыдущие студии. Manley mono mic-pre, конвертер Apogee Rosetta 800, мониторы Harbeth M20.</p>
-    <p style="text-align: justify;">В нашем микрофонном парке 3хTelefunken ELA-M 251 в которые поют Elton John,&nbsp;Stevie Wonder, Christina Aguilera, Mariah Carey и многие другие мировые звёзды, два винтажных Neumann 87, стерео микрофоны Neumann SM2 и Neumann SM69 F.E.T.</p>
-    <p style="text-align: justify;">При всём вышеперечисленном Qu<span style="color: #ff0000;">art</span>amusic является, самой демократичной студией Москвы в отношении цен на запись.</p>
-    <p style="text-align: justify;">Мы делаем максимум для того, чтобы вы создавали МУЗЫКУ !</p>
+    <p>СОЮЗ Голос одна из самых оснащённых студий страны. В нашем парке микрофонов 3хTelefunken ELA-M 251 в которые поют Элтон Джон, Стиви Уандер, Кристина Агилера, Марай Керри и многие другие мировые звёзды, Neumann 149, винтажные Neumann 87, стерео микрофоны Neumann SM2 и Neumann SM69 F.E.T.</p>
+    <p style="font-size:"><b>Мы предлагаем полный спектр услуг по работе со звуком как для профессиональных, так и для начинающих музыкантов и артистов.</b></p>
+    <p style="text-align: justify;">Услугами наших специалистов пользуются такие артисты, как Сергей Лазарев, Тимати и Blackstar Inc., Geegun, DJ Smash, «Гости из будущего», Н. Кочеткова, Кнара, А. Зацепин, К. Кокс (ВИА Сливки), Григорий Лепс, Анна Седокова, Сосо Павлиашвили, Стас Пьеха, Борис Моисеев, Виктория Дайнеко. Участники проекта "Голос", "Главная сцена"и многие другие.</p>
+    <p style="text-align: justify; font-size:"><b>Теперь опыт наших профессионалов доступен и для Вас.
+    <br>Все технологии записи такие же как и у профессиональных артистов.</b></p>
+    <p style="text-align: justify;">При всём вышеперечисленном СОЮЗ Голос является самой демократичной студией Москвы в отношении цен на запись!</p>
 </div>
 </span>
 </span>
@@ -1148,7 +1291,7 @@
 </div>
 </div>
 </div>
-<div id="aspectCompsContainer" class="siteAspectsContainer">
+<!-- <div id="aspectCompsContainer" class="siteAspectsContainer">
     <div style="position:absolute" id="popoverLayer">
 </div>
     <div style="top:;bottom:;left:;right:;position:;overflow:hidden;visibility:hidden" data-has-iframe="true" class="s_DtaksTPAWidgetSkin" id="tpaWorker_3">
@@ -1157,7 +1300,7 @@
         <div id="tpaWorker_3overlay" class="s_DtaksTPAWidgetSkinoverlay">
 </div>
     </div>
-</div>
+</div> -->
        
 </div>
 </div>
