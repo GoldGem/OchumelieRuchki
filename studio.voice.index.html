@@ -67,6 +67,9 @@
   });
 });
 </script>
+
+
+
 <!-- кнопка возврата на начала страницы -->
     <script type="text/javascript" > 
     function up() {  
@@ -485,11 +488,51 @@
 <div id="ivzlh2brbg" class="c2bg">
 </div>
 <div class="c2inlineContent" id="ivzlh2brinlineContent" style="margin-top: 30px;">
-<div class="flex_container">
-    <div class="flex_element"></div>
-    <div class="flex_element"></div>
-    <div class="flex_element"></div>
-    <div class="flex_element"></div>
+<div class="f_container">
+    <div class="f_block">
+
+        <div class="f_text font_6" >
+
+        <div id="f_element1" class="f_element1">
+            <p><b>Сингл "Хит"</b></p>
+            <p>Предоставляет запись одной песни в профессиональной студии.</p>
+            <button id="btn1" class="button_more">Подробнее</button>
+        </div>
+
+        <div id="f_element1_more" class="f_element1_more">
+            <p>В сингл входит:</p>
+            <p>- Запись песни на готовый минус, студия предоставляет минусовку</p>
+            <p>- Аренда студии</p>
+            <p>- Чистка, тюнинг и монтаж вокала</p>
+            <p>- Сведение</p>
+            <p>- Мастеринг</p>
+            <p>- Доп услуги:</p>
+            <p>Фотосъемка во время записи, с последующей обработкой фотографий</p>
+            <p>Видеосъемка во время записи, с последующим монтажом видеоклипа на песню</p>
+            <p>Вы можете записать песню сами или подарить СЕРТИФИКАТ (кнопка) на запись Сингла (кнопка) другому человеку!</p>
+            <button class="button_more">Подробнее</button> 
+        </div>
+
+        </div>
+
+    </div>
+    <div class="f_block"></div>
+    <div class="f_block"></div>
+    <div class="f_block"></div>
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+               $("#f_element1_more").hide();
+                    $("#btn1").click(function () {
+                        $("#f_element1").hide();
+                        $("#f_element1_more").show()
+                    });
+                  $(".btn2").click(function () {
+                        $(".second_div").hide();
+                        $(".first_div").show()
+                });
+             });
+    </script>
 </div> 
     <div id="ivzlh2brinlineContent-gridWrapper" data-mesh-internal="true">
 <div id="ivzlh2brinlineContent-gridContainer" data-mesh-internal="true">

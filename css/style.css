@@ -7763,7 +7763,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
   /*-------------FLEX BOX----------------*/
 
-  .flex_container {
+  .f_container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -7773,7 +7773,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
   }
 
-  .flex_element {
+  .f_block {
     flex-basis: 450px;
     background: #fff;
     min-height: 300px;
@@ -7781,3 +7781,48 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
   }
+  .f_text {
+    margin: 20px 50px; 
+    position: relative;
+  }
+  .f_text p{
+    margin: 0px 0; 
+    font-size: 16px;
+  }
+
+  .f_element1 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .f_element1_more {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .button_more {
+  color: #e36999; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #fff; /* фон кнопки */
+  outline: none; /* убирать контур в Mozilla */
+  display: inline-block;
+  margin: 40px 20px;
+  padding: 0px 30px;/* отступ от текста */
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .2s;
+  /*font-family: NBC Futura;*/
+  letter-spacing: 2px;
+ 
+  font-size: 16px;
+
+  line-height: 45px;
+  border-radius: 45px;
+  cursor: pointer;
+
+}
+#f_element1_more: target{
+  display: block;
+}
