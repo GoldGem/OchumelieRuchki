@@ -7760,3 +7760,22 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
   background-size:100px;
 }    
   /* конец прелоудера */
+
+  /*-------------FLEX BOX----------------*/
+
+  .flex_container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+  }
+
+  .flex_element {
+    flex-basis: 400px;
+    background: #000;
+    min-height: 200px;
+    margin: 50px; auto;
+  }
