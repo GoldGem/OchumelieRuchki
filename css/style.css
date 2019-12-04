@@ -7030,7 +7030,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
 #ilculd7u {
     position: relative;
-    margin: 75px 0px 2px 0;
+    margin: 100px 0px 2px 0;
     left: 217px;
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
@@ -7048,7 +7048,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
 #ilcumior {
     position: relative;
-    margin: 110px 0px 36px 0;
+    margin: 100px 0px 36px 0;
     left: 410px;
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
@@ -7057,7 +7057,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
 #ilcum7uf {
     position: relative;
-    margin: 4px 0px -78px 0;
+    margin: 0px 0px -74px 0;
     left: 596px;
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
@@ -7066,17 +7066,35 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
 #ilcunel6 {
     position: relative;
-    margin: 93px 0px 7px 0;
+    margin: 109px 0px 7px 0;
     left: 601px;
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
     align-self: start;
 }
 
+#ilcv6ia50 {
+    position: relative;
+    margin: 5px 0px 0px 0;
+    left: 212px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#ilcupd490 {
+    position: relative;
+    margin: 93px 0px 10px 0;
+    left: 217px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
 #ilcv6ia5 {
     position: relative;
-    margin: 2px 0px 0px 0;
-    left: 306px;
+    margin: 5px 0px 0px 0;
+    left: 405px;
     grid-area: 2 / 1 / 3 / 2;
     justify-self: start;
     align-self: start;
@@ -7085,7 +7103,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 #ilcupd49 {
     position: relative;
     margin: 109px 0px 10px 0;
-    left: 311px;
+    left: 410px;
     grid-area: 2 / 1 / 3 / 2;
     justify-self: start;
     align-self: start;
@@ -7093,8 +7111,8 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
 #ilcv6hlr {
     position: relative;
-    margin: 0px 0px 2px 0;
-    left: 497px;
+    margin: 5px 0px 0px 0;
+    left: 596px;
     grid-area: 2 / 1 / 3 / 2;
     justify-self: start;
     align-self: start;
@@ -7103,7 +7121,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 #ilcuvci1 {
     position: relative;
     margin: 74px 0px 10px 0;
-    left: 502px;
+    left: 601px;
     grid-area: 2 / 1 / 3 / 2;
     justify-self: start;
     align-self: start;
@@ -7776,63 +7794,79 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
   .f_block {
     flex-basis: 450px;
     background: #fff;
-    min-height: 300px;
+    min-height: 481px;
     margin: 10px 10px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
   }
   .f_text {
-    margin: 20px 50px; 
+    margin: 30px 30px 20px; 
     position: relative;
   }
   .f_text p{
-    margin: 0px 0; 
+    margin: 10px 0; 
     font-size: 14px;
     color:#848484;
+    font-weight: 600;
+  }
+  .f_text * b{
+    margin: 10px 0; 
+    font-size: 24px;
+    color:#000;
+    /*font-weight: 600;*/
   }
 
-.f_element {
+
+  .f_element {
     position: relative;
     overflow: hidden;
-    height: 300px;
-    
-  }
-.f_element:focus, #btn2:focus   ~ .f_element {height: auto;}
-
-
-  .f_element1 {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .f_element1_more {
-    overflow: hidden;
-    position: relative;
   }
 
   .button_more {
-  color: #e36999; /* цвет текста */
+  color: #000; /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
   user-select: none; /* убирать выделение текста */
   background: #fff; /* фон кнопки */
   outline: none; /* убирать контур в Mozilla */
   display: inline-block;
-  margin: 40px 20px;
-  padding: 0px 30px;/* отступ от текста */
+  margin: 5px 10px;
+  padding: 10px 10px;/* отступ от текста */
   overflow: hidden;
   text-align: center;
-  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  box-shadow: 0 0px 10px rgba(0,0,0,0.2);
+  transition: .2s;
+  /*font-family: NBC Futura;*/
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  float: right;
+  /*line-height: 45px;*/
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+  .button_buy {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #ed1c24; /* фон кнопки */
+  outline: none; /* убирать контур в Mozilla */
+  display: inline-block;
+  margin: 30px 5px 0;
+  padding: 5px 30px;/* отступ от текста */
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0px 10px rgba(0,0,0,.2);
   transition: .2s;
   /*font-family: NBC Futura;*/
   letter-spacing: 2px;
  
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
 
   line-height: 45px;
   border-radius: 45px;
   cursor: pointer;
 
-}
-#f_element1_more: target{
-  display: block;
 }
