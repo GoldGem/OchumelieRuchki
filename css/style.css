@@ -7787,7 +7787,8 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
   }
   .f_text p{
     margin: 0px 0; 
-    font-size: 16px;
+    font-size: 14px;
+    color:#848484;
   }
 
   .f_element1 {
