@@ -186,23 +186,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
 <body class="" data-js-loaded="true">
                    
 <!-- форма -->
-<div id="telform">
-<div id="telforml"><? if($tflag==1){ echo 'Вы не указали имя или телефон, попробуйте снова.'; } if($tflag==2){ echo 'Спасибо! Мы скоро свяжемся с Вами.'; } if($tflag==3){ echo 'Форма не отправляется! Просьба связаться с нами по телефону.'; } if($tflag==0){ echo 'Заполните и отправьте форму и мы перезвоним Вам.'; } ?></div>
-<form action="/" method="post">
-<table>
-<tr><td>
-Имя:</td><td><input type=text class="telform" name="nameC">
-</td></tr>
-<tr><td>
-Телефон:</td><td><input type=text class="telform" name="telC">
-</td></tr>
-<tr><td>
-Комментарии:</td><td><textarea class="telform" rows="4" cols="20" name="annotC" ></textarea>
-</td></tr>
-<tr><td></td><td><input type="submit" id="otprav" value="Отправить"><input type="hidden" name="otpravit" value="1"></td></tr>
-</table>
-<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-</form>
+<div id="popup1">
+   
+    <div id="telform">
+        <button class="button_close"><img src="img/cross.png"></button>
+        <div id="telforml"><? if($tflag==1){ echo 'Вы не указали имя или телефон, попробуйте снова.'; } if($tflag==2){ echo 'Спасибо! Мы скоро свяжемся с Вами.'; } if($tflag==3){ echo 'Форма не отправляется! Просьба связаться с нами по телефону.'; } if($tflag==0){ echo 'Заполните и отправьте форму и мы перезвоним Вам.'; } ?></div>
+        <form action="/" method="post">
+        <table>
+        <tr><td>
+        Имя:</td><td><input type=text class="telform" name="nameC">
+        </td></tr>
+        <tr><td>
+        Телефон:</td><td><input type=text class="telform" name="telC">
+        </td></tr>
+        <tr><td>
+        Комментарии:</td><td><textarea class="telform" rows="4" cols="20" name="annotC" ></textarea>
+        </td></tr>
+        <tr><td></td><td><input type="submit" id="otprav" value="Отправить"><input type="hidden" name="otpravit" value="1"></td></tr>
+        </table>
+        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+        </form>
+    </div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+               $("#popup1").hide();
+                    $(".button_buy").click(function () {
+                        $("#popup1").show();
+                    });
+                  $(".button_close").click(function () {
+                        $("#popup1").hide();
+                });
+             });
+    
+</script>
+
 </div>
 
     

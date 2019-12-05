@@ -7901,3 +7901,61 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
   cursor: pointer;
 
 }
+
+/*---------------FORM STYLES-------------------------*/
+
+#popup1 {
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99999999;
+        transition: opacity 400ms ease-in;
+        width:100%;
+        min-height:100%;
+
+}
+
+
+
+#popup1 > div {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+
+}
+
+.button_close {
+  color: #fff; 
+  text-decoration: none; 
+  user-select: none; 
+  background: #e36999; 
+  outline: none; 
+  display: inline-block;
+  box-shadow: 0 0px 10px rgba(0,0,0,.2);
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 600;
+  top: -10px;
+  right: 5px;
+  line-height: 45px;
+  border-radius: 45px;
+  cursor: pointer;
+
+
+}
+
+.button_close img {
+
+  width: 30px;
+  height: auto;
+}
