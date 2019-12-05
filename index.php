@@ -1,3 +1,46 @@
+<?
+$tflag=0;
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])) {
+ 
+    
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = '6LcfUcYUAAAAAHjI8BOstWaXcLAxArNqTDcT5hW0';
+    $recaptcha_response = $_POST['recaptcha_response'];
+ 
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+    $recaptcha = json_decode($recaptcha);
+
+    if ($recaptcha->score >= 0.5) {
+		
+		if(isset($_REQUEST['otpravit']))
+		{
+			if(($_REQUEST['nameC']!="")&&($_REQUEST['telC']!=""))
+			{
+				$datetemp=date("d.m.Y H.i.s");
+
+				$title = substr(htmlspecialchars(trim("Заказ с quartamusic $datetemp")), 0, 1000); 
+
+				$temp=$_REQUEST['nameC']." \n комментарии: ".$_REQUEST['annotC']." \n телефон: ".$_REQUEST['telC'];
+				$mess = substr(strip_tags($temp), 0, 1000000);  
+				$to = 'allexxey222@gmail.com'; 
+				$from='test@tekrap.ru'; 
+
+				mail($to, $title, $mess, 'From:'.$from);
+				$tflag=2;
+			}
+			else
+			{
+				$tflag=1;
+			}
+		}
+    } else {
+		$tflag==3;
+    }
+ 
+}
+?>
+
 <!DOCTYPE html>
 <html class="" lang="ru">
 <head>
@@ -22,8 +65,17 @@
     <noscript>
         <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
     </noscript>
-    
+    <!-- Скрипт капчи v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcfUcYUAAAAAKQwz7MzV5zvu8Cu_1udX6-T84bS"></script>
 
+<script type="text/javascript">
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LcfUcYUAAAAAKQwz7MzV5zvu8Cu_1udX6-T84bS', { action: 'contact' }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
     
     
     <!-- preloader -->
@@ -132,10 +184,29 @@
 </head>
 
 <body class="" data-js-loaded="true">
-                    
+                   
+<!-- форма -->
+<div id="telform">
+<div id="telforml"><? if($tflag==1){ echo 'Вы не указали имя или телефон, попробуйте снова.'; } if($tflag==2){ echo 'Спасибо! Мы скоро свяжемся с Вами.'; } if($tflag==3){ echo 'Форма не отправляется! Просьба связаться с нами по телефону.'; } if($tflag==0){ echo 'Заполните и отправьте форму и мы перезвоним Вам.'; } ?></div>
+<form action="/" method="post">
+<table>
+<tr><td>
+Имя:</td><td><input type=text class="telform" name="nameC">
+</td></tr>
+<tr><td>
+Телефон:</td><td><input type=text class="telform" name="telC">
+</td></tr>
+<tr><td>
+Комментарии:</td><td><textarea class="telform" rows="4" cols="20" name="annotC" ></textarea>
+</td></tr>
+<tr><td></td><td><input type="submit" id="otprav" value="Отправить"><input type="hidden" name="otpravit" value="1"></td></tr>
+</table>
+<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+</form>
+</div>
 
     
-
+<!-- конец формы -->
 
     
 
