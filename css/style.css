@@ -6239,6 +6239,15 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     justify-self: start;
     align-self: start;
 }
+#i1ah4z3q3 {
+    position: relative;
+    margin: 0px 0px 8px calc((100% - 980px) * 0.5);
+    left: 12px;
+    grid-area: 6 / 1 / 7 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
 #ivzln83v {
     position: relative;
     margin: 0px 0px 5px calc((100% - 980px) * 0.5);
@@ -7798,6 +7807,28 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     margin: 10px 10px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+  }
+
+  .f_block2 {
+    flex-basis: 225px;
+    background: #fff;
+    width: 225px;
+    height: 225px;
+    margin: 10px 10px;
+    border-radius: 110px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+  }
+
+  .f_part {
+    margin: 20px auto;
+    height: 291px;
+  }
+
+  .f_block2 img{
+    height: 225px;
+    width: auto;
+    
   }
   .f_text {
     margin: 30px 30px 20px; 
