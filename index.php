@@ -1494,7 +1494,7 @@ $(document).ready(function () {
                           <p style="flex-wrap: nowrap; margin-bottom: 5px;"> <b>Адрес: </b></p>
                             <p style="margin-bottom: 5px;">Ленинский проспект, д. 106/1</p>
                             <p style="margin-bottom: 5px;"><b >Телефон:</b></p>
-                            <p style="margin-bottom: 5px;">+7 (495) 722-0234 - студия QU<span style="color: #ff0000;">ART</span>AMUSIC</p>
+                            <p style="margin-bottom: 5px;">+7 (495) 722-0234 - студия СОЮЗ Голос</p>
                             <p>+7 (495) 720-7046 - директор студии Валерий Костин</p>
                             
                             <a href="https://vk.com/quartamusicstudio"><i class="fab fa-vk" href="http://quartamusic.livejournal.com/" style="font-size: 70px;margin-top: 90px; margin-left: 10px;color:#4a76a8;"></i></a>
