@@ -796,8 +796,8 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     font-weight: 400;
     src: url('//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/open-source/opensans-regular-webfont.eot');
     src: url('//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/open-source/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/open-source/opensans-regular-webfont.woff') format('woff'),
-    url('//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/open-source/opensans-regular-webfont.ttf') format('truetype'),
+    /*url('//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/open-source/opensans-regular-webfont.woff') format('woff'),
+    url('//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/open-source/opensans-regular-webfont.ttf') format('truetype'),*/
     url('//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/open-source/opensans-regular-webfont.svg#open_sansregular') format('svg');
 }
 
@@ -7752,7 +7752,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 }
 
 /* стили для прелоудера */
-#p_prldr{
+/*#p_prldr{
   position: fixed;
   left: 0;
   top: 0;
@@ -7785,12 +7785,12 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
   height: 100px;
   background: url(../Studio_voice/Infinity-10s-180px.svg) center center no-repeat;
   background-size:100px;
-}    
+}    */
   /* конец прелоудера */
 
   /*-------------FLEX BOX----------------*/
 
-  .f_container {
+.f_container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -7800,7 +7800,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
   }
 
-  .f_block {
+.f_block {
     flex-basis: 450px;
     background: #fff;
     min-height: 481px;
@@ -7809,7 +7809,7 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
   }
 
-  .f_block2 {
+.f_block2 {
     flex-basis: 225px;
     background: #fff;
     width: 225px;
@@ -7820,27 +7820,27 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     overflow: hidden;
   }
 
-  .f_part {
+.f_part {
     margin: 20px auto;
     height: 291px;
   }
 
-  .f_block2 img{
+.f_block2 img{
     height: 225px;
     width: auto;
     
   }
-  .f_text {
+.f_text {
     margin: 30px 30px 20px; 
     position: relative;
   }
-  .f_text p{
+.f_text p{
     margin: 10px 0; 
     font-size: 14px;
     color:#848484;
     font-weight: 600;
   }
-  .f_text * b{
+.f_text * b{
     margin: 10px 0; 
     font-size: 24px;
     color:#000;
@@ -7848,24 +7848,24 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
   }
 
 
-  .f_element {
+.f_element {
     position: relative;
     overflow: hidden;
   }
 
-  .button_more {
+.button_more {
   color: #000; /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
   user-select: none; /* убирать выделение текста */
   background: #fff; /* фон кнопки */
   outline: none; /* убирать контур в Mozilla */
   display: inline-block;
-  margin: 5px 10px;
+  margin: 5px 10px 15px;
   padding: 10px 10px;/* отступ от текста */
   overflow: hidden;
   text-align: center;
   box-shadow: 0 0px 10px rgba(0,0,0,0.2);
-  transition: .2s;
+  transition:.4s;
   /*font-family: NBC Futura;*/
   letter-spacing: 2px;
   font-size: 16px;
@@ -7875,21 +7875,27 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
   border-radius: 10px;
   cursor: pointer;
 
+
 }
 
-  .button_buy {
+.button_more:hover {
+  background-color: #ececec;
+  box-shadow: 0 0px 15px rgba(0,0,0,0.3);
+}
+
+.button_buy {
   color: #fff; /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
   user-select: none; /* убирать выделение текста */
   background: #ed1c24; /* фон кнопки */
   outline: none; /* убирать контур в Mozilla */
   display: inline-block;
-  margin: 30px 5px 0;
+  margin: 30px 15px 15px;
   padding: 5px 30px;/* отступ от текста */
   overflow: hidden;
   text-align: center;
   box-shadow: 0 0px 10px rgba(0,0,0,.2);
-  transition: .2s;
+  transition:.4s;
   /*font-family: NBC Futura;*/
   letter-spacing: 2px;
  
@@ -7902,6 +7908,11 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
 }
 
+.button_buy:hover {
+  background-color: #cd1b21;
+  box-shadow: 0 0px 15px rgba(0,0,0,.3);
+
+}
 /*---------------FORM STYLES-------------------------*/
 
 #popup1 {
@@ -7918,44 +7929,116 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 
 }
 
-
-
-#popup1 > div {
-  width: 700px;
-  height: 500px;
+#telform {
+  width: 500px;
+  height: 900px;
   position: relative;
   margin: 10% auto;
-  padding: 5px 20px 13px 20px;
+/*  padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #fff;
+  background: #fff;*/
 
 }
 
+form {
+  margin:0 auto;
+  max-width:95%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:10px; 
+  background:RGBA(255,255,255,1);
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);  
+
+}
+.textbox{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px; 
+  padding:10px;
+  margin-bottom:30px;  
+}
+.message:focus,
+.textbox:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:rgba(24,149,215,1);
+}
+/* Стили текстового поля */
+.message{
+    background: rgba(255, 255, 255, 0.4); 
+    width:100%;
+    height: 120px;
+    border:rgba(0,0,0,.3) 2px solid;
+    box-sizing:border-box;
+    -moz-border-radius: 3px;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
+}
+/* Базовые стили кнопки */
+.button_send{
+  height:50px;
+  width:100%;
+  border-radius:25px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  background:#000;
+  color:#fff; 
+  font-weight:600;
+  font-size: 16pt;
+  /*transition: .4s;*/
+  cursor:pointer;
+  /*box-shadow: 0 0px 10px rgba(0,0,0,.2);*/
+  box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+  -webkit-transition: all 0.3s;
+}
+
+.button_send:hover {
+  box-shadow: 0px 15px 25px -5px rgba(0,0,0,.3);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+.button_send:active {
+  box-shadow: 0px 4px 8px rgba(0,0,0,.3);
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+
 .button_close {
-  color: #fff; 
+  color: #000; 
   text-decoration: none; 
   user-select: none; 
-  background: #e36999; 
+  background: #fff; 
   outline: none; 
   display: inline-block;
   box-shadow: 0 0px 10px rgba(0,0,0,.2);
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   position: absolute;
   overflow: hidden;
   font-size: 20px;
-  font-weight: 600;
-  top: -10px;
-  right: 5px;
-  line-height: 45px;
-  border-radius: 45px;
+  top: 5px;
+  right: 15px;
+  border-radius: 20px;
   cursor: pointer;
+  transition: .4s;
 
 
 }
 
-.button_close img {
-
-  width: 30px;
-  height: auto;
+.button_close:hover {
+  background-color: #000;
+  color: #fff;
 }
