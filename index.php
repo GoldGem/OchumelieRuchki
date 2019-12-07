@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
 
 				$title = substr(htmlspecialchars(trim("Заказ с Союз Голос $datetemp")), 0, 1000); 
 
-				$temp=" \n Имя: "$_REQUEST['nameC']." \n Услуга: ".$_REQUEST['annotC']." \n телефон: ".$_REQUEST['telC'];
+				$temp=" \n Имя: ".$_REQUEST['nameC']." \n Услуга: ".$_REQUEST['annotC']." \n телефон: ".$_REQUEST['telC'];
 				$mess = substr(strip_tags($temp), 0, 1000000);  
 				$to = 'allexxey222@gmail.com'; 
 				$from='test@tekrap.ru'; 
