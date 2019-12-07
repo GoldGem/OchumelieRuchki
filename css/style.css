@@ -8043,3 +8043,4 @@ form {
   background-color: #000;
   color: #fff;
 }
+.grecaptcha-badge { visibility: hidden; }
