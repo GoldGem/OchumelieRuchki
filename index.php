@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
 			{
 				$datetemp=date("d.m.Y H.i.s");
 
-				$title = substr(htmlspecialchars(trim("Заказ с quartamusic $datetemp")), 0, 1000); 
+				$title = substr(htmlspecialchars(trim("Заказ с Союз Голос $datetemp")), 0, 1000); 
 
-				$temp=$_REQUEST['nameC']." \n комментарии: ".$_REQUEST['annotC']." \n телефон: ".$_REQUEST['telC'];
+				$temp=" \n Имя: "$_REQUEST['nameC']." \n Услуга: ".$_REQUEST['annotC']." \n телефон: ".$_REQUEST['telC'];
 				$mess = substr(strip_tags($temp), 0, 1000000);  
 				$to = 'allexxey222@gmail.com'; 
 				$from='test@tekrap.ru'; 
@@ -65,17 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
     <noscript>
         <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
     </noscript>
-    <!-- Скрипт капчи v3 -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcfUcYUAAAAAKQwz7MzV5zvu8Cu_1udX6-T84bS"></script>
-
-<script type="text/javascript">
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LcfUcYUAAAAAKQwz7MzV5zvu8Cu_1udX6-T84bS', { action: 'contact' }).then(function (token) {
-                var recaptchaResponse = document.getElementById('recaptchaResponse');
-                recaptchaResponse.value = token;
-            });
-        });
-    </script>
+    
     
     
     <!-- preloader -->
@@ -187,19 +177,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
                    
 <!-- форма -->
 <div id="popup1">
-   
+   <!-- Скрипт капчи v3 -->
+   <script src="https://www.google.com/recaptcha/api.js?render=6LcfUcYUAAAAAKQwz7MzV5zvu8Cu_1udX6-T84bS"></script>
+
+   <script type="text/javascript">
+           grecaptcha.ready(function () {
+               grecaptcha.execute('6LcfUcYUAAAAAKQwz7MzV5zvu8Cu_1udX6-T84bS', { action: 'contact' }).then(function (token) {
+                   var recaptchaResponse = document.getElementById('recaptchaResponse');
+                   recaptchaResponse.value = token;
+               });
+           });
+       </script>
     <div id="telform">
         <button class="button_close"><i class="fas fa-times"></i></button>
         <div id="telforml">
-            <? if($tflag==1){ echo 'Вы не указали имя или телефон, попробуйте снова.'; } if($tflag==2){ echo 'Спасибо! Мы скоро свяжемся с Вами.'; } if($tflag==3){ echo 'Форма не отправляется! Просьба связаться с нами по телефону.'; } if($tflag==0){ echo 'Заполните и отправьте форму и мы перезвоним Вам.'; } ?> 
         </div>
         <form action="/" method="post">
 
             <input placeholder="Укажите ваше имя" type=text class="telform textbox" name="nameC" required>
 
             <input placeholder="Укажите ваш номер телефона" type=text class="telform textbox" name="telC" required>
-
-            <textarea placeholder="Введите ваше сообщение:" class="telform message" rows="4" cols="50" name="annotC" required></textarea>
+            <select class="textbox" name="annotC" required >
+                <option>Сингл "Хит"</option>
+                <option>Сингл "Две звезды"</option>
+                <option>Сингл "Корпоратив"</option>
+                <option>Сингл "Профессионал"</option>
+              </select>
+            <!-- <textarea placeholder="Выберите услугу:" class="telform message" rows="4" cols="50" name="annotC" required></textarea> -->
 
             <input type="submit" id="otprav" value="Отправить" class="button_send">
             <input type="hidden" name="otpravit" value="1">
