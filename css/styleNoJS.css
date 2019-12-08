@@ -24,4 +24,5 @@
 .nav-arrows,
 .nav-dots {
 	display: none;
+	z-index:10;
 }

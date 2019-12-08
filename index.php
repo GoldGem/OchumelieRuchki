@@ -1498,7 +1498,7 @@ $(document).ready(function () {
                           <p style="flex-wrap: nowrap; margin-bottom: 5px;"> <b>Адрес: </b></p>
                             <p style="margin-bottom: 5px;">Ленинский проспект, д. 106/1</p>
                             <p style="margin-bottom: 5px;"><b >Телефон:</b></p>
-                            <p style="margin-bottom: 5px;">+7 (495) 722-0234 - студия СОЮЗ Голос</p>
+                            <p style="margin-bottom: 5px;">+7 (915) 235-53-06 - студия СОЮЗ Голос</p>
                             <p>+7 (495) 720-7046 - директор студии Валерий Костин</p>
                             
                             <a href="https://vk.com/quartamusicstudio"><i class="fab fa-vk" href="http://quartamusic.livejournal.com/" style="font-size: 70px;margin-top: 90px; margin-left: 10px;color:#4a76a8;"></i></a>
@@ -1548,13 +1548,13 @@ $(document).ready(function () {
         <div id="SITE_HEADERinlineContent-gridWrapper" data-mesh-internal="true">
         <div id="SITE_HEADERinlineContent-gridContainer" data-mesh-internal="true">
         <div data-packed="true" style="width: 166px; pointer-events: none;" class="txtNew" id="ig2tt1dv">
-            <h2 style="font-size:16px;" class="font_2">
+            <h2 style="font-size:16px;width: 190px;" class="font_2">
                 <span style="font-family:play,sans-serif;">
                     <span style="font-size:16px;">
                         <span style="letter-spacing:0em;">
                             <span style="color:#363636;">
                                 <object height="0">
-                                    <a class="auto-generated-link" data-auto-recognition="true" data-content="Quartamusic@mail.ru" href="mailto:Quartamusic@mail.ru" data-type="mail">Qu<span style="color: #ff0000;">art</span>amusic@mail.ru</a>
+                                    <a class="auto-generated-link" data-auto-recognition="true" data-content="soyuzgolos@gmail.com" href="mailto:soyuzgolos@gmail.com" data-type="mail">Soyuz<span style="color: #ff0000;">golos</span>@gmail.com</a>
                                 </object>
                             </span>
                         </span>
@@ -1567,7 +1567,7 @@ $(document).ready(function () {
                 <span style="font-size:16px;">
                     <span style="letter-spacing:0em;">
                         <span style="font-family:play,sans-serif;">
-                            <span style="color:#363636;">+7(495)722-0234</span>
+                            <span style="color:#363636;">+7 (915) 235-53-06</span>
                         </span>
                     </span>
                 </span>
@@ -1587,7 +1587,7 @@ $(document).ready(function () {
                 <span style="margin-left:0" id="ixd6ci31label" class="style-jtc0m67tlabel">Активация</span>
             </a>
         </div> -->
-        <div style="width: 221px; height: 76px;left: 45px;" class="ImageButton_1" data-state="supports_opacity transition_fade   " id="i0p6st1t">
+        <div style="width: 221px;height: 76px;left: 45px;top: -10;margin-bottom: 0px;" class="ImageButton_1" data-state="supports_opacity transition_fade   " id="i0p6st1t">
             <a href="#" onclick="return up()" target="_self" data-keep-roots="true" data-anchor="c1ruo" title="" style="width:221px;height:76px" id="i0p6st1tlink" class="ImageButton_1link">
                 <div class="ImageButton_1_correct-positioning">
                     <wix-image style="width:221px;height:76px;top:0;left:20px" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;alt&quot;:&quot;&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;c_defaultImage10mm&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;studiovoice_final.ai.png&quot;,&quot;uri&quot;:&quot;souz_golos1.svg&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1759,&quot;height&quot;:1007,&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;i0p6st1t&quot;,&quot;displayMode&quot;:&quot;full&quot;}" id="i0p6st1tdefaultImage" class="ImageButton_1defaultImage" data-is-svg="true">
